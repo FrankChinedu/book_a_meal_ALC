@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book-a-meal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body class="bg-img">
+    <div class="conatainer ">
+        <nav class="navbar hi-z-index sticky white align-item-center justify-content-sb">
+            <span class="ml-25">
+                <h3 class="brand-style cursor">Book-Eat</h3>
+            </span>
+            <div class="mr-25">
+                <ul class="p-0 ">
+                    <li class="nav-item nav-link">Logout</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row justify-content-ctr mt-25 mr-25 ml-25">
+            <div class="col-3">
+                <div class="card card-gray a-margin" >
+                    <div class="card-header text-center">
+                        Total number of meal sold today
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="">2</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 m-5 ">
+                <div class=" card card-gray" style="max-width:100%">
+                    <div class="card-header text-center">
+                        Menu History 
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-9 mr-5">
+                                    <p>Select date to view history</p>
+                                    <input type="date" class="form-control" value="2019-02-28" min="2019-02-01" max="2019-02-31">
+                                </div>
+                                <div class="col-3">
+                                    <p class="date-style sm-text-shadow">Feb, 28</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="card card-gray a-margin" >
+                    <div class="card-header ">
+                        Total Cash Realized Today
+                    </div>
+                    <div class="card-body">
+                        <h2 class="md-font-size text-center">$35</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-sa m-0 mt-25">
+            <div class="col-12 m-15">
+                <div class="card card-gray" style="max-width:100%;">
+                    <div class="card-header text-center ">Order History Details</div>
+                    <div class="card-body text-center scroll-bar">
+                        
+                        <table class="table table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">OrderedBy</th>
+                                    <th scope="col">Meal</th>
+                                    <th scope="col">Time</th>
+                                    <!-- <th scope="col">Qty (plate) (no ordered)</th> -->
+                                    <th scope="col">Price / plate</th>
+                                    <!-- <th scope="col">Total</th> -->
+                                    <th scope="col">Ready or not</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark spoon</td>
+                                    <td>bread and akara</td>
+                                    <td>Break fast</td>
+                                    <!-- <td>3</td> -->
+                                    <td>$15</td>
+                                    <!-- <td>$45</td> -->
+                                    <td>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" checked class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Ready</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>larry gray</td>
+                                    <td>egwusi and garri</td>
+                                    <td>Dinner</td>
+                                    <!-- <td>1</td> -->
+                                    <td>$20</td>
+                                    <!-- <td>$20</td> -->
+                                    <td>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Not </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+</body>
+
+</html>
