@@ -38,6 +38,11 @@ a {
 }
 
 .fix-bg-height{
+    display: flex;
+    justify-content: center;
+}
+
+.fix-body{
     height: 100vh;
 }
 
