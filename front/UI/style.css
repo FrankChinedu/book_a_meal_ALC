@@ -37,6 +37,10 @@ a {
     width: 100%;
 }
 
+.fix-bg-height{
+    height: 100vh;
+}
+
 .scroll-bar{
     max-height:200px;
     overflow-y: scroll;
