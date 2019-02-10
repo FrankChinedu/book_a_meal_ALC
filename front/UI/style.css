@@ -37,6 +37,15 @@ a {
     width: 100%;
 }
 
+.fix-bg-height{
+    display: flex;
+    justify-content: center;
+}
+
+.fix-body{
+    height: 100vh;
+}
+
 .scroll-bar{
     max-height:200px;
     overflow-y: scroll;
