@@ -9,170 +9,94 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./front/UI/style.css" />
 </head>
 
-<body class="bg-img">
-    <div class="conatainer ">
-        <nav class="navbar hi-z-index sticky white align-item-center justify-content-sb">
-            <span class="ml-25">
-                <h3 class="brand-style cursor">Book-Eat</h3>
-            </span>
-            <div class="mr-25">
-                <ul class="p-0 row">
-                    <li class="nav-item nav-link ">
-                        <a href="./front/UI/customerPage.html " class="nav-link">customer</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                        <a href="./front/UI/historyManager.html" class="nav-link ">history</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                        <a href="./front/UI/menuManager.html" class="nav-link">menu</a>
-                    </li>
-                    <li class="nav-item nav-link ">
-                        <a href="./front/UI/signIn.html" class="nav-link">signIn</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                        <a href="./front/UI/signup.html" class="nav-link">logout</a>
-                    </li>
-                </ul>
+<body class="home-bg-color">
+    <header class="header">
+        <nav class="row row-m justify-content-sb">
+            <div class="ml-25">
+            	<h2 class="brand-name"><span class="book">B</span>ook-<span class="eat">E</span>at</h2>
             </div>
+            <ul class="row  mr-25 main-nav" style="margin: auto 0;">
+            	<li class="nav-item">
+            		<a href="./front/UI/customerPage.html" class="nav-link shade">Customer</a>
+            	</li>
+            	<li class="nav-item">
+            		<a href="./front/UI/historyManager.html" class="nav-link shade">History</a>
+            	</li>
+            	<li class="nav-item">
+            		<a href="./front/UI/foodManager.html" class="nav-link shade">Menu</a>
+            	</li>
+            	<li class="nav-item">
+            		<a href="./front/UI/signIn.html" class="nav-link shade">SignIn</a>
+            	</li>
+            	<li class="nav-item">
+            		<a href="./front/UI/signup.html" class="nav-link shade">Logout</a>
+            	</li>
+            </ul>
+            <ul class="mobile-nav" style="margin: auto 0;">
+                <li class="nav-item">
+                    <a href="./front/UI/foodManager.html" class="nav-link shade">Menu</a>
+                </li>
+            	<li class="nav-item">
+            		<a href="./front/UI/signIn.html" class="nav-link shade">SignIn</a>
+            	</li>
+            	<li class="nav-item">
+            		<a href="./front/UI/signup.html" class="nav-link shade">Logout</a>
+                </li>
+            </ul>
         </nav>
-        <div class="row justify-content-ctr mt-25 mr-25 ml-25">
-            <div class="col-3">
-                <div class="card card-gray a-margin card-default mb-5">
-                    <div class="card-header text-center">
-                        Food Fact
-                    </div>
-                    <div class="card-body text-center">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus error ex eligendi?
-                            Dicta earum consequatur
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9 ml-5 mr-5 ">
-                <div class=" card card-gray" style="max-width:100%">
-                    <div class="card-header">
-                        Select Meal
-                    </div>
-                    <div class="card-body">
-                        <div class="">
-                            <form>
-                                <div class="row">
-                                    <div class="col-9 mr-5">
-                                        <input type="date" class="form-control" value="2019-02-28" min="2019-01-01" max="2020-01-01">
-                                    </div>
-                                    <div class="col-3 ">
-                                        <p class="date-style sm-text-shadow m-0">Feb, 28</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="md-font-size sm-text-shadow text-center tx-white m-0">Food Menu</h4>
-            </div>
-            <div class="col-3 ">
-                <div class="card card-gray a-margin">
-                    <div class="card-header text-center">
-                        choose Food based on chef's menu
-                    </div>
-                    <div class="card-body scroll-bar">
-                        <table class="table ">
+        
+        <div class="head-content text-center">
+        	<h2 class="head-title  head-title-m">EXCEPTIONAL CUISINES MADE SPECIALLY FOR YOU</h2>
+        	<p class="head-sub">Get the feel of the best cousines from the world best chefs</p>
 
-                            <tbody>
-                                <tr>
-                                    <td class="cursor shade" colspan="4"><a>chef : <span class="sm-text-shadow">frank
-                                                spoon </span></a></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cursor shade" colspan="4"><a>chef : <span class="sm-text-shadow">john
-                                                gray</span></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        	<div >
+                <a href="#gallery">
+                    <h4 class="white f-menu" style="color: black;">
+                        Food Menu
+                    </h4>
+                </a>
+        	</div>
         </div>
+    </header>
 
-        <div class="row justify-content-sa m-0 mt-25">
-            <div class="col-4">
-                <div class="card card-gray" style="max-width:100%;">
-                    <div class="card-header ">Break fast</div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered ">
+    <h2 class="text-center" id="food-gal">Food Gallery</h2>
 
-                            <tbody>
-                                <tr>
-                                    <td colspan="4">beans and rice ( chef : nerd)</td>
-                                    <th scope="col"><button class="btn btn-success btn-sm">make order</button></th>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">akara and bread ( chef : jay)</td>
-                                    <th scope="col"><button class="btn btn-success btn-sm">make order</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 m-5">
-                <div class="card  card-gray" style="max-width: 100%;">
-                    <div class="card-header">Launch</div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered">
-
-                            <tbody>
-                                <tr>
-                                    <td colspan="4">beans and rice ( chef : frank)</td>
-                                    <th scope="col"><button class="btn btn-success btn-sm">make order</button></th>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="4">egwusi and garri( chef : lee ) </td>
-                                    <th scope="col"><button class="btn btn-success btn-sm">make order</button></th>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="4">egwusi and garri ( chef : frank)</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">revert order</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card card-gray" style="max-width: 100%;">
-                    <div class="card-header">
-                        <span>Dinner</span>
-                    </div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered ">
-
-                            <tbody>
-                                <tr>
-                                    <td colspan="4">akara and bread ( chef : john)</td>
-                                    <th scope="col"><button class="btn btn-success btn-sm">make order</button></th>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">egwusi and garri ( chef : frank) </td>
-                                    <th scope="col"><button class="btn btn-default btn-sm disabled" disabled>delivered</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="gallery justify-content-ctr" id="gallery">
+    	<div class="gallery-item">
+            <img src="./front/UI/img/food2.jpeg" style="width:100%">
+            <img src="./front/UI/img/food1.jpeg" style="width:100%">
+    	</div>
+    	<div class="gallery-item">
+            <img src="./front/UI/img/food3.jpeg" style="width:100%">
+            <img src="./front/UI/img/food4.jpeg" style="width:100%; height: 65.9%;">
+    	</div>
+    	<div class="gallery-item">
+            <img src="./front/UI/img/food5.jpeg" style="width:100%">
+            <img src="./front/UI/img/food6.jpeg" style="width:100%; height: 65.9%;">
+    	</div>
     </div>
 
-    <!-- <script src="main.js"></script> -->
+    <div class="" style="overflow:hidden; margin-top: 25px;">
+        <div class="chef" style="float:left; border-radius: 82px 0 100px 0;"></div>
+        <div class="text-center" style="position: absolute; width: 100%;">
+            <h2 class="head-title">MasterChef</h2>
+            <p class="head-sub">Make Special requests from our Master Chefs</p>
+            <h4 class="white f-menu cursor">Make Order</h4>
+        </div>
+    </div>
+
+    <footer class="footer row justify-content-ctr">
+        <div class="text-center " style="margin: 25px auto">
+            <h3>Contact Us</h3>
+            <div class="row justify-content-sa">
+                <p class="col-4 mlr">twitter: <a style="display:block;" href="#">twitter@bookeat.com</a></p><br>
+                <p class="col-4 mlr">Contact information: <a  href="#">info@bookeat.com</a></p>
+                <br>
+                <p class="col-4 mlr">facebook: <a style="display:block;" href="#">facebook@bookeat.com</a></p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
