@@ -4,6 +4,8 @@ const express = require('express');
 
 const app = express();
 
+require("./routes/routes")(app);
+
 app.get('/home', (req, res) => {
   res.send({
     message: 'home',
