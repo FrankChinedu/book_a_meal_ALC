@@ -4,13 +4,9 @@ const express = require('express');
 
 const app = express();
 
-require("./routes/routes")(app);
+const routes = require('./routes/api');
 
-app.get('/home', (req, res) => {
-  res.send({
-    message: 'home',
-  });
-});
+app.use('/api/v1/', routes);
 
 app.listen(process.env.PORT, () => {
   console.log('server start at port 5000');
