@@ -1,8 +1,7 @@
 import Meals from '../models/Meals';
 
 export default class MealsService {
-  fetchAllMeals() {
-    // This is the data we will have in our database
+  constructor() {
     this.meals = [
       {
         id: 1,
@@ -33,7 +32,10 @@ export default class MealsService {
         cook_id: '1',
       },
     ];
+  }
 
+  fetchAllMeals() {
+    // This is the data we will have in our database
     const meals = this.meals.map((data) => {
       const meal = new Meals();
       meal.id = data.id;
@@ -56,10 +58,29 @@ export default class MealsService {
     return this.fetchAllMeals()[id - 1];
   }
 
-  update({ id, name, price }) {
-    const meal = this.get(id);
-    meal.name = name;
-    meal.price = price;
+  update(params) {
+    const { id } = params;
+    let meal = this.get(id);
+    meal = { ...meal, ...params };
+
     return meal;
+  }
+
+  add(params) {
+    let meal = new Meals();
+    meal.id = this.meals.length + 1;
+    meal.cook_id = 1;
+    meal = { ...meal, ...params };
+
+    this.meals = [...this.meals, meal];
+    return this.meals;
+  }
+
+  delete(id) {
+    const passedId = parseInt(id, 10);
+    return this.meals.filter((data) => {
+      const dataId = parseInt(data.id, 10);
+      return dataId !== passedId;
+    });
   }
 }

@@ -11,4 +11,16 @@ export default class MealsController {
 
     res.status(200).send(new MealsServices().update(data));
   }
+
+  static add(req, res) {
+    const data = { ...req.body };
+
+    res.status(200).send(new MealsServices().add(data));
+  }
+
+  static delete(req, res) {
+    const { id } = req.params;
+
+    res.status(200).send(new MealsServices().delete(id));
+  }
 }

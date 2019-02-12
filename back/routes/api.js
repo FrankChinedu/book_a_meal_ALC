@@ -10,6 +10,8 @@ router.get('/home', TestController.getTest);
 
 /* meals route */
 router.get('/meals', MealsController.getAllMeal);
-router.post('/meals/:id', MealsController.update);
+router.put('/meals/:id', MealsController.update);
+router.post('/meals', MealsController.add);
+router.delete('/meals/:id', MealsController.delete);
 
 module.exports = router;

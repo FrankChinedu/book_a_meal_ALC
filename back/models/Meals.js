@@ -3,7 +3,7 @@ export default class Meals {
     this.id = null;
     this.name = null;
     this.price = null;
-    this.currency = null;
+    this.currency = 'NGN';
     this.cook_id = null;
   }
 }
