@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/home', TestController.getTest);
 
 /* meals route */
-// router.get('/meals', MealsController.getAllMeal);
+router.get('/meals', MealsController.getAllMeal);
 router.post('/meals/:id', MealsController.update);
 
 module.exports = router;
