@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/index.test.js"
   },
   "author": "obi chinedu frank <frankieetchy@gmail.com>",
   "license": "MIT",
@@ -17,9 +17,12 @@
     "@babel/core": "7.2.2",
     "@babel/node": "7.2.2",
     "@babel/preset-env": "7.3.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
     "eslint": "5.13.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.16.0",
+    "mocha": "5.2.0",
     "nodemon": "1.18.10"
   }
 }
