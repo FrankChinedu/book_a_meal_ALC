@@ -1,9 +1,9 @@
 import 'dotenv/config';
-
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-// const morgan = require('morgan');
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import routes from './routes/api';
+// import morgan from 'morgan';
 
 const app = express();
 
@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-const routes = require('./routes/api');
 
 const apiURL = '/api/v1';
 global.apiURL = apiURL;
