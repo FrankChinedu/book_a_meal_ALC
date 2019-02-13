@@ -2,14 +2,14 @@ import MealsServices from '../services/MealsServices';
 
 export default class MealsController {
   static getAllMeal(req, res) {
-    res.status(200).send(new MealsServices().getAll());
+    res.status(200).send(MealsServices.getAllMeal());
   }
 
   static update(req, res) {
     const { id } = req.params;
     const data = { ...req.body, id };
 
-    const response = new MealsServices().update(data);
+    const response = MealsServices.update(data);
 
     if (response) {
       res.status(200).send(response);
@@ -19,13 +19,11 @@ export default class MealsController {
 
   static add(req, res) {
     const data = { ...req.body };
-
-    res.status(200).send(new MealsServices().add(data));
+    res.status(200).send(MealsServices.add(data));
   }
 
   static delete(req, res) {
     const { id } = req.params;
-
-    res.status(200).send(new MealsServices().delete(id));
+    res.status(200).send(MealsServices.delete(id));
   }
 }
