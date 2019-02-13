@@ -14,6 +14,10 @@ const routes = require('./routes/api');
 
 app.use('/api/v1/', routes);
 
-app.listen(process.env.PORT, () => {
-  console.log('server start at port 5000');
-});
+if (!module.parent) {
+  app.listen(process.env.PORT, () => {
+    console.log('server start at port 5000');
+  });
+}
+
+module.exports = app;
