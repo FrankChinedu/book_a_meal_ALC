@@ -1,8 +1,7 @@
+import express from 'express';
 import TestController from '../controller/TestController';
 import MealsController from '../controller/MealController';
 import MenuController from '../controller/MenuController';
-
-const express = require('express');
 
 const router = express.Router();
 
