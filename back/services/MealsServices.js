@@ -61,8 +61,10 @@ export default class MealsService {
   update(params) {
     const { id } = params;
     let meal = this.get(id);
-    meal = { ...meal, ...params };
-
+    if (meal) {
+      meal = { ...meal, ...params };
+      return meal;
+    }
     return meal;
   }
 
@@ -73,7 +75,7 @@ export default class MealsService {
     meal = { ...meal, ...params };
 
     this.meals = [...this.meals, meal];
-    return this.meals;
+    return meal;
   }
 
   delete(id) {
