@@ -1,42 +1,11 @@
 import Meals from '../models/Meals';
+import { meals } from '../utils/DummyData';
 
 export default class MealsService {
-  constructor() {
-    this.meals = [
-      {
-        id: 1,
-        name: 'Jollof Rice',
-        price: '500',
-        currency: 'NGN',
-        cook_id: '1',
-      },
-      {
-        id: 2,
-        name: 'Beans and Rice with stew',
-        price: '800',
-        currency: 'NGN',
-        cook_id: '1',
-      },
-      {
-        id: 3,
-        name: 'Garri with okoro soup Rice',
-        price: '900',
-        currency: 'NGN',
-        cook_id: '1',
-      },
-      {
-        id: 4,
-        name: 'Fried yam and plaintain with chicken',
-        price: '600',
-        currency: 'NGN',
-        cook_id: '1',
-      },
-    ];
-  }
-
-  fetchAllMeals() {
+  static fetchAllMeals() {
+    // let that = this;
     // This is the data we will have in our database
-    const meals = this.meals.map((data) => {
+    const mappedMeals = meals.map((data) => {
       const meal = new Meals();
       meal.id = data.id;
       meal.name = data.name;
@@ -46,21 +15,21 @@ export default class MealsService {
       return meal;
     });
 
-    return meals;
+    return mappedMeals;
   }
 
-  getAll() {
-    return this.fetchAllMeals();
+  static getAllMeal() {
+    return MealsService.fetchAllMeals();
   }
 
-  get(id) {
+  static get(id) {
     // -1 because we have our data in an array which starts at 0
-    return this.fetchAllMeals()[id - 1];
+    return MealsService.fetchAllMeals()[id - 1];
   }
 
-  update(params) {
+  static update(params) {
     const { id } = params;
-    let meal = this.get(id);
+    let meal = MealsService.get(id);
     if (meal) {
       meal = { ...meal, ...params };
       return meal;
@@ -68,19 +37,18 @@ export default class MealsService {
     return meal;
   }
 
-  add(params) {
+  static add(params) {
     let meal = new Meals();
-    meal.id = this.meals.length + 1;
+    meal.id = meals.length + 1;
     meal.cook_id = 1;
     meal = { ...meal, ...params };
-
-    this.meals = [...this.meals, meal];
+    meals.push(meal);
     return meal;
   }
 
-  delete(id) {
+  static delete(id) {
     const passedId = parseInt(id, 10);
-    return this.meals.filter((data) => {
+    return meals.filter((data) => {
       const dataId = parseInt(data.id, 10);
       return dataId !== passedId;
     });
