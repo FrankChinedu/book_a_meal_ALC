@@ -9,7 +9,12 @@ export default class MealsController {
     const { id } = req.params;
     const data = { ...req.body, id };
 
-    res.status(200).send(new MealsServices().update(data));
+    const response = new MealsServices().update(data);
+
+    if (response) {
+      res.status(200).send(response);
+    }
+    res.status(404).end();
   }
 
   static add(req, res) {
