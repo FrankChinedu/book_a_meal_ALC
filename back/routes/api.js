@@ -1,12 +1,11 @@
 import express from 'express';
-import TestController from '../controller/TestController';
 import MealsController from '../controller/MealController';
 import MenuController from '../controller/MenuController';
+import OrderController from '../controller/OrderController';
 
 const router = express.Router();
 
 /* routers  */
-router.get('/test', TestController.getTest);
 
 /* meals route */
 router.get('/meals', MealsController.getAllMeal);
@@ -19,5 +18,12 @@ router.delete('/meals/:id', MealsController.delete);
 router.get('/menu', MenuController.getMenu);
 router.post('/menu', MenuController.setupMenu);
 router.delete('/menu/:id', MenuController.delete);
+
+/* order route */
+
+router.get('/order', OrderController.getAllOrder);
+router.put('/order/:id', OrderController.update);
+router.post('/order', OrderController.add);
+router.delete('/order/:id', OrderController.delete);
 
 module.exports = router;

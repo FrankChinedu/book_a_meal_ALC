@@ -1,4 +1,4 @@
-import Meals from '../models/Meals';
+import Meals from '../models/Meal';
 import { meals } from '../utils/DummyData';
 
 export default class MealsService {
@@ -10,7 +10,7 @@ export default class MealsService {
       meal.id = data.id;
       meal.name = data.name;
       meal.price = data.price;
-      meal.cook_id = data.cook_id;
+      meal.cookId = data.cookId;
       meal.currency = data.currency;
       return meal;
     });
@@ -40,7 +40,7 @@ export default class MealsService {
   static add(params) {
     let meal = new Meals();
     meal.id = meals.length + 1;
-    meal.cook_id = 1;
+    meal.cookId = 1;
     meal = { ...meal, ...params };
     meals.push(meal);
     return meal;

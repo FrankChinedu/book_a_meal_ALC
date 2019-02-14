@@ -5,6 +5,6 @@ export default class Menu {
     this.time_frame = null; /* ['breakfast', 'lunch', 'dinner']  is to be an enum in the db */
     this.dateForMeal = null;
     this.meal = {};
-    this.cook_id = null;
+    this.cookId = null;
   }
 }
