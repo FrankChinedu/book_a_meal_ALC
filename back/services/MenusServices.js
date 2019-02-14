@@ -7,7 +7,6 @@ export default class MenusServices {
     /* the manu fetched would depend on the time passed when we introduce the database */
     // This is the data we will have in our database
     const date = mealDate;
-    const meals = Meals.getAllMeal();
 
     const mappedMenu = menus.map((data) => {
       const menu = new Menus();
@@ -15,16 +14,18 @@ export default class MenusServices {
       menu.mealId = data.mealId;
       menu.dateForMeal = data.dateForMeal;
       menu.time_frame = data.time_frame;
-      menu.cook_id = data.cook_id;
-
-      const thisMeal = meals.find(meal => meal.id === parseInt(data.mealId, 10));
-
-      menu.meal = { ...thisMeal };
-
+      menu.cookId = data.cookId;
+      menu.meal = { ...this.getMeal(data.mealId) };
       return menu;
     });
 
     return mappedMenu.filter(meal => meal.dateForMeal === date);
+  }
+
+  static getMeal(mealId) {
+    const meals = Meals.getAllMeal();
+    const meal = meals.find(ml => ml.id === parseInt(mealId, 10));
+    return meal;
   }
 
   static getTodaysDate() {
@@ -48,7 +49,7 @@ export default class MenusServices {
   static add(params) {
     let menu = new Menus();
     menu.id = menus.length + 1;
-    menu.cook_id = 1;
+    menu.cookId = 1;
     menu = { ...menu, ...params };
     menus.push(menu);
     return menu;

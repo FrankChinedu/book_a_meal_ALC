@@ -54,7 +54,7 @@ describe('MENU', () => {
           res.body.should.have.property('mealId');
           res.body.should.have.property('time_frame');
           res.body.should.have.property('dateForMeal');
-          res.body.should.have.property('cook_id');
+          res.body.should.have.property('cookId');
           res.body.should.have.property('id');
           res.body.should.have.property('meal').should.be.a('object');
           done();

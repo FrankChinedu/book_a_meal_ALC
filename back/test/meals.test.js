@@ -39,7 +39,7 @@ describe('Meal', () => {
           res.body.should.have.property('price');
           res.body.should.have.property('currency');
           res.body.should.have.property('id');
-          res.body.should.have.property('cook_id');
+          res.body.should.have.property('cookId');
           done();
         });
     });
@@ -87,7 +87,7 @@ describe('Meal', () => {
           res.body.should.have.property('price');
           res.body.should.have.property('currency');
           res.body.should.have.property('id');
-          res.body.should.have.property('cook_id');
+          res.body.should.have.property('cookId');
           done();
         });
     });
