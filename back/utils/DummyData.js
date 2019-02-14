@@ -33,7 +33,7 @@ module.exports = {
     {
       id: 1,
       mealId: 2,
-      dateForMeal: '500',
+      dateForMeal: '2019-01-12',
       cook_id: 1,
       time_frame: 'breakfast',
       meal: {},
@@ -41,7 +41,7 @@ module.exports = {
     {
       id: 2,
       mealId: 3,
-      dateForMeal: '500',
+      dateForMeal: '2019-02-14',
       cook_id: 1,
       time_frame: 'lunch',
       meal: {},
@@ -49,7 +49,7 @@ module.exports = {
     {
       id: 3,
       mealId: 1,
-      dateForMeal: '500',
+      dateForMeal: '2019-02-14',
       cook_id: 1,
       time_frame: 'dinner',
       meal: {},

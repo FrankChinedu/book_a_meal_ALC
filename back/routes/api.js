@@ -1,12 +1,10 @@
 import express from 'express';
-import TestController from '../controller/TestController';
 import MealsController from '../controller/MealController';
 import MenuController from '../controller/MenuController';
 
 const router = express.Router();
 
 /* routers  */
-router.get('/test', TestController.getTest);
 
 /* meals route */
 router.get('/meals', MealsController.getAllMeal);

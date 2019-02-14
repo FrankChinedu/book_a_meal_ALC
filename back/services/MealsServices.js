@@ -1,4 +1,4 @@
-import Meals from '../models/Meals';
+import Meals from '../models/Meal';
 import { meals } from '../utils/DummyData';
 
 export default class MealsService {

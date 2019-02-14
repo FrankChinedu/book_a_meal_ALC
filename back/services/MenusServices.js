@@ -3,9 +3,10 @@ import Meals from './MealsServices';
 import { menus } from '../utils/DummyData';
 
 export default class MenusServices {
-  static fetchAllMenus() {
+  static fetchAllMenus(mealDate = MenusServices.getTodaysDate()) {
     /* the manu fetched would depend on the time passed when we introduce the database */
     // This is the data we will have in our database
+    const date = mealDate;
     const meals = Meals.getAllMeal();
 
     const mappedMenu = menus.map((data) => {
@@ -23,11 +24,25 @@ export default class MenusServices {
       return menu;
     });
 
-    return mappedMenu;
+    return mappedMenu.filter(meal => meal.dateForMeal === date);
   }
 
-  static getMenu() {
-    return MenusServices.fetchAllMenus();
+  static getTodaysDate() {
+    const now = new Date();
+    const date = now.getDate();
+
+    let month = now.getMonth() + 1;
+    month = month < 9 ? `0${month}` : month;
+
+    const year = now.getFullYear();
+
+    const result = `${year}-${month}-${date}`;
+
+    return result;
+  }
+
+  static getMenu(date) {
+    return this.fetchAllMenus(date);
   }
 
   static add(params) {
