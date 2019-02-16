@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+.flex{
+    display: flex;
+}
+
 .bg-img{
     background: url('./img/bg-img.jpg');
     background-repeat: no-repeat;
