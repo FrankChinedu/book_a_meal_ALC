@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Book-a-meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+</head>
+
+<body>
+  <header class="header-index">
+    <nav class="nav-head">
+      <div class="col-1"></div>
+      <div class="col-9 ">
+        <ul class="flex justify-content-sa border-right">
+          <li class="bottom-dash active li-sty-none">
+            <a class="nav-link-index tx-white" href="#">home</a>
+          </li>
+          <li class="bottom-dash li-sty-none">
+            <a class="nav-link-index tx-white" href="#">menu</a>
+          </li>
+          <li class="bottom-dash li-sty-none">
+            <a class="nav-link-index tx-white" href="#">history</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="flex">
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="#">Frank</a>
+          </li>
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="#">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <h2 class="brand-name">Book-Eat</h2>
+    </div>
+  </header>
+  <div>
+    <h2 class="text-center aliceblue" style="margin:0;" id="food-gal">history</h2>
+  </div>
+  <div class="row main-align">
+    <div class="col-3 mb-25">
+      <div class="col-11 mb-25" style="padding-right: 19px;">
+        <div class="card card-gray a-margin">
+          <div class="card-header text-center">
+            Feb 12
+          </div>
+        </div>
+      </div>
+      <div class="flex mb-5">
+        <div class="col-5 mr-25">
+          <div class="card card-gray a-margin">
+            <div class="card-header text-center">
+              Quantity Sold
+            </div>
+            <div class="card-body text-center">
+              <h2 class="">2</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card card-gray a-margin">
+            <div class="card-header text-center">
+              Amount
+            </div>
+            <div class="card-body text-center">
+              <h2 class="">$94</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 mb-25" style="padding-right: 19px;">
+        <div class="card card-gray a-margin">
+          <div class="card-header text-center">
+            <div class="">
+              <div class="col-12 mb-25">
+                <input type="date" class="form-control" value="2019-02-28" min="2019-02-01" max="2019-02-31">
+              </div>
+              <div class="row">
+                <div class="col-12 align-self">
+                  <button class="btn btn-success ">Get menu</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 flex">
+      <div class="col-12">
+        <div class="card card-gray" style="max-width:100%;">
+          <div class="card-header text-center ">Order History Details</div>
+          <div class="card-body text-center scroll-bar">
+      
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">OrderedBy</th>
+                  <th scope="col">Meal</th>
+                  <th scope="col">Time</th>
+                  <!-- <th scope="col">Qty (plate) (no ordered)</th> -->
+                  <th scope="col">Price / plate</th>
+                  <!-- <th scope="col">Total</th> -->
+                  <th scope="col">Ready or not</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark spoon</td>
+                  <td>bread and akara</td>
+                  <td>Break fast</td>
+                  <!-- <td>3</td> -->
+                  <td>$15</td>
+                  <!-- <td>$45</td> -->
+                  <td>
+                    <div class="form-group form-check">
+                      <input type="checkbox" checked class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Ready</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>larry gray</td>
+                  <td>egwusi and garri</td>
+                  <td>Dinner</td>
+                  <!-- <td>1</td> -->
+                  <td>$20</td>
+                  <!-- <td>$20</td> -->
+                  <td>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Not </label>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
