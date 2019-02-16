@@ -3,8 +3,9 @@
     box-sizing: border-box;
 }
 body {
- /* background: #2c2b2b; */
- background: #131313;
+ background: black;
+ /* background: #131313; */
+
  color: #131313;
  padding: 0;
  margin: 0;
@@ -18,7 +19,7 @@ body {
   z-index: 2;
   top: 0;
   /* background: #131313; */
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
 }
 
 .in-left{
@@ -39,8 +40,8 @@ body {
 .quote {
   color: aliceblue;
   text-align: center;
-  font-size: 46px;
-  text-shadow: #98abb9 2px 1px 2px;
+    font-size: 46px;
+    text-shadow: grey 2px 1px 2px;
 }
 
 .height-100{
@@ -74,7 +75,7 @@ body {
 }
 
 .nav-head{
-  /* background: red; */
+  background: #131313;
   height: 66px;
   display: flex;
 
@@ -84,6 +85,23 @@ body {
   box-shadow: 0px 0px 1px white;
 }
 
+.aliceblue{
+  color: aliceblue;
+}
+
+.index-footer{
+      width: 100%;
+    height: 94px;
+    margin-top: 22px;
+  background: #141313;
+    padding: 0 30px;
+    color: #FFF;
+}
+.chef-cover{
+  position: absolute;
+  width: 50%;
+  margin: 11% auto;
+}
 
 .bottom-dash {
   border-bottom-style: solid;
@@ -109,6 +127,89 @@ body {
 .posi {
   position: absolute;
   width: 100%;
+}
+
+.box{
+   width: 200px;                
+  display: flex;                
+  flex-direction: column;       
+  border: 1px solid whitesmoke;    
+  border-radius: 1px;           
+  overflow: hidden;            
+  margin: 5px;
+  position: relative;  
+  box-shadow: -2px 1px 1px whitesmoke;             
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: #363535 1px 1px 1px;
+}
+
+.box-con {
+  background: aliceblue;
+  height: 100%;
+  width: inherit;
+  position: absolute;
+  top: 132px;
+}
+
+.box-con > div > span {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.height-fit-content {
+  height: fit-content;
+}
+
+.box-con > div {
+  padding: 0 7px;
+  word-wrap: break-word;
+}
+.bx-img-1{
+  background: url('./img/food3.jpeg');
+}
+
+.bx-img-2{
+  background: url('./img/foodd.jpeg')
+}
+.bx-img-3{
+  background: url('./img/foodd1.jpeg')
+}
+.bx-img-4{
+  background: url('./img/foodd2.jpeg')
+}
+.bx-img-5{
+  background: url('./img/foodd3.jpeg')
+}
+
+.box-con > div > span > p {
+  margin: 8px 0;
+}
+.box-con > div > h4  {
+  margin-top: 5px;
+}
+
+.box-1 {
+    height: 200px;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.truncate {
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-main{
+
+}
+
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .sign-iu {
