@@ -17,7 +17,34 @@ body {
   position: sticky;
   z-index: 2;
   top: 0;
-  background: #131313;
+  /* background: #131313; */
+  background: rebeccapurple;
+}
+
+.in-left{
+  width: 400px;
+  height: 400px;
+  /* background: red; */
+  box-sizing: border-box;
+  box-shadow: wheat 1px 0px 1px;
+}
+
+.in-left > div {
+  width: 92%;
+  height: 92%;
+  /* background: gainsboro; */
+  box-shadow: wheat -1px 0px 1px;
+}
+
+.quote {
+  color: aliceblue;
+  text-align: center;
+  font-size: 46px;
+  text-shadow: #98abb9 2px 1px 2px;
+}
+
+.height-100{
+  height: 100%;
 }
  
 .brand-name {
@@ -75,9 +102,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: scaleX(-1);
     width: 100%;
     height: 600px;
+}
+
+.posi {
+  position: absolute;
+  width: 100%;
 }
 
 .sign-iu {
