@@ -1,7 +1,7 @@
 ## Table of contents
 
 * [General info](#general-info)
-* [Book a meal](#book-a-meal)
+* [Book-Eat](#book-a-meal)
 * [Technologies](#technologies)
 * [Code style](#code-style)
 * [UI Template and Theme](#ui-theme)
