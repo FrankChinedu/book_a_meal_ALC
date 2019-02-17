@@ -1,0 +1,355 @@
+
+*{
+    box-sizing: border-box;
+}
+body {
+ background: black;
+ /* background: #131313; */
+
+ color: #131313;
+ padding: 0;
+ margin: 0;
+ /* background: #21303b;
+ color: #fff; */
+}
+
+.header-index {
+  height: 112px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  /* background: #131313; */
+  /* background: rebeccapurple; */
+}
+
+.in-left{
+  width: 400px;
+  height: 400px;
+  /* background: red; */
+  box-sizing: border-box;
+  box-shadow: wheat 1px 0px 1px;
+}
+
+.in-left > div {
+  width: 92%;
+  height: 92%;
+  /* background: gainsboro; */
+  box-shadow: wheat -1px 0px 1px;
+}
+
+.quote {
+  color: aliceblue;
+  text-align: center;
+    font-size: 46px;
+    text-shadow: grey 2px 1px 2px;
+}
+
+.height-100{
+  height: 100%;
+}
+
+.main-align{
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+ 
+.brand-name {
+  font-size: 40px;
+  line-height: 104px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  text-shadow: #363535 3px 3px 5px;
+}
+ 
+.brand-logo {
+  float: left;
+  position: absolute;
+  margin: 15px 0;
+  outline: 1px dashed #98abb9;
+  outline-offset: -5px;
+  z-index: 1;
+  background-color: #2c2b2b;
+  height: 100px;
+  width: 200px;
+  margin: -48px 0;
+  -webkit-box-shadow: 2px 2px 2px #000;
+  -moz-box-shadow: 2px 2px 2px #000;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.nav-head{
+  background: #131313;
+  height: 66px;
+  display: flex;
+
+  /* border-bottom-style: solid;
+  border-bottom-color: coral;
+  border-block-end-width: 1px; */
+  box-shadow: 0px 0px 1px white;
+}
+
+.aliceblue{
+  color: aliceblue;
+}
+
+.index-footer{
+      width: 100%;
+    height: 94px;
+    margin-top: 22px;
+  background: #141313;
+    padding: 0 30px;
+    color: #FFF;
+}
+.chef-cover{
+  position: absolute;
+  width: 50%;
+  margin: 11% auto;
+}
+
+.bottom-dash {
+  border-bottom-style: solid;
+  border-bottom-color: #363535;
+  border-block-end-width: 3px;
+}
+
+.border-right {
+  /* border-right: 4px solid #514c4c; */
+  /* box-shadow: white 3px 0px 0px; */
+  box-shadow: #363535 2px 0px 0px;
+}
+
+.main {
+    background-image: url('./img/wine-food1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.posi {
+  position: absolute;
+  width: 100%;
+}
+
+.box{
+   width: 200px;                
+  display: flex;                
+  flex-direction: column;       
+  border: 1px solid whitesmoke;    
+  border-radius: 1px;           
+  overflow: hidden;            
+  margin: 5px;
+  position: relative;  
+  box-shadow: -2px 1px 1px whitesmoke;             
+}
+.box:hover {
+  transform: scale(1.01);
+  box-shadow: #363535 1px 1px 1px;
+}
+
+.box-con {
+  background: aliceblue;
+  height: 100%;
+  width: inherit;
+  position: absolute;
+  top: 132px;
+}
+
+.cheff{
+    background-image: url('img/chefff.jpeg');
+    width:50%;
+    height:411px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    filter: blur(6px);
+    float:left; border-radius:43px 0 64px 0;
+}
+
+
+.sub-nav {
+      width: 200px;
+    margin-right: 10px;
+    background: #1f1818;
+    padding: 14px;
+    text-align: center;
+}
+
+.scroll-li{
+    max-height:1000px;
+    overflow-y: scroll;
+}
+.payCard{
+  width: 100px;
+}
+
+.payCard-body{
+  padding: 12px;
+  background: aliceblue;
+}
+
+.payCard-down {
+  background: aliceblue;
+}
+
+.confirm{
+  background: #262525;
+   box-shadow: 0px 0px 1px white; 
+}
+
+
+.flex-dir-col{
+  flex-direction: column
+}
+
+.active-li{
+  background: gray;
+}
+
+.box-con > div > span {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.height-fit-content {
+  height: fit-content;
+}
+
+.receipt{
+  background: #FFF;
+  border-radius: 3px;
+}
+
+.receipt-brand-name {
+  font-size: 20px;
+  line-height: 67px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  text-shadow: #363535 3px 3px 5px;
+}
+ 
+.receipt-brand-logo {
+    float: left;
+    position: absolute;
+    margin: 15px 0;
+    outline: 1px dashed #98abb9;
+    outline-offset: -5px;
+    z-index: 1;
+    background-color: #2c2b2b;
+    height: 63px;
+    width: 138px;
+    margin: -48px 50px;
+    -webkit-box-shadow: 2px 2px 2px #000;
+    -moz-box-shadow: 2px 2px 2px #000;
+    box-shadow: 2px 2px 2px #000;
+}
+
+
+.box-con > div {
+  padding: 0 7px;
+  word-wrap: break-word;
+}
+.bx-img-1{
+  background: url('./img/food3.jpeg');
+}
+
+.bx-img-2{
+  background: url('./img/foodd.jpeg')
+}
+.bx-img-3{
+  background: url('./img/foodd1.jpeg')
+}
+.bx-img-4{
+  background: url('./img/foodd2.jpeg')
+}
+.bx-img-5{
+  background: url('./img/foodd3.jpeg')
+}
+
+.box-con > div > span > p {
+  margin: 8px 0;
+}
+.box-con > div > h4  {
+  margin-top: 5px;
+}
+
+.box-1 {
+    height: 200px;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.truncate {
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-main{
+
+}
+
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.sign-iu {
+  padding: 0px 10px;
+}
+
+.active {
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+  border-block-end-width: 3px;
+}
+.nav-head > div > ul > li > a:hover {
+  color: grey;
+}
+.nav-head > div > ul {
+    margin: 38px 0 0 0;
+}
+
+.li-sty-none {
+  list-style: none;
+}
+
+.nav-link-index{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-2 {
+  flex-grow: 2;
+}
+.flex-grow-3 {
+  flex-grow: 3;
+}
+.flex-grow-4 {
+  flex-grow: 4;
+}
+.flex-grow-5 {
+  flex-grow: 5;
+}
+.flex-grow-6 {
+  flex-grow: 6;
+}
+.flex-grow-7 {
+  flex-grow: 7;
+}
+.flex-grow-8 {
+  flex-grow: 8;
+}

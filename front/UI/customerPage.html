@@ -2,131 +2,142 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Book-a-meal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Book-a-meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
 </head>
 
-<body class="bg-img">
-    <div class="conatainer ">
-        <nav class="navbar hi-z-index sticky white align-item-center justify-content-sb">
-            <span class="ml-25">
-                <h3 class="brand-style cursor">Book-Eat</h3>
-            </span>
-            <div class="mr-25">
-                <ul class="p-0 ">
-                    <li class="nav-item nav-link">Logout</li>
-                </ul>
-            </div>
-        </nav>
-        <div class="row justify-content-ctr mt-25 mr-25 ml-25">
-            <div class="col-6 mb-5">
-                <div class="card card-gray a-margin" style="max-width:100%">
-                    <div class="card-header text-center">
-                        most recent order
-                    </div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered">
-                            <tbody>
-                                <tr>
-                                    <td colspan="4">beans and rice ( chef : frank)</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">revert order</button></th>
-                                </tr>
-                        
-                                <tr>
-                                    <td colspan="4">egwusi and garri ( chef : lee ) </td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">revert order</button></th>
-                                </tr>
-                        
-                                <tr>
-                                    <td colspan="4">egwusi and garri ( chef : frank)</td>
-                                    <th scope="col"><button class="btn btn-default disabled btn-sm" disabled>delivered</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 ml-5 mr-5 mb-5">
-                <div class=" card card-gray" style="max-width:100%">
-                    <div class="card-header">
-                        Meal Dashboard
-                    </div>
-                    <div class="card-body">
-                        <div class="">
-                            <form>
-                                <div class="row">
-                                    <div class="col-75 mr-5">
-                                        <h4 class="md-font-size sm-text-shadow text-center tx-white m-0">Frank Ang</h4>
-                                    </div>
-                                    <div class="col-25 ">
-                                        <p class="date-style sm-text-shadow m-0">Feb, 28</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2 mb-5">
-                <div class="card card-gray a-margin card-default" >
-                    <div class="card-header text-center">
-                        Notification
-                    </div>
-                    <div class="card-body text-center">
-                        <span class="notify bx-shadow"></span>
-                        <p>No new Notification</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-sa m-0 mt-25">
-            <div class="col-12 m-15">
-                <div class="card card-gray" style="max-width:100%;">
-                    <div class="card-header text-center ">Order History Details</div>
-                    <div class="card-body text-center scroll-bar">
-        
-                        <table class="table table-bordered ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">PreparedBy</th>
-                                    <th scope="col">Meal</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Date Ordered</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>chef Mark spoon</td>
-                                    <td>bread and akara</td>
-                                    <td>Break fast</td>
-                                    <td>$15</td>
-                                    <td>2019-02-01</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>chef larry gray</td>
-                                    <td>egwusi and garri</td>
-                                    <td>Dinner</td>
-                                    <td>$20</td>
-                                    <td>2019-01-31</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+<body>
+  <header class="header-index">
+    <nav class="nav-head">
+      <div class="col-1"></div>
+      <div class="col-9 ">
+        <ul class="flex none justify-content-sa border-right">
+          <li class="bottom-dash active li-sty-none">
+            <a class="nav-link-index tx-white" href="./index.html">home</a>
+          </li>
+          <li class="bottom-dash li-sty-none">
+            <a class="nav-link-index tx-white" href="./menuManager.html">menu</a>
+          </li>
+          <li class="bottom-dash li-sty-none">
+            <a class="nav-link-index tx-white" href="./historyManager.html">history</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="flex">
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="#">Frank</a>
+          </li>
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="./signIn.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <h2 class="brand-name">Book-Eat</h2>
     </div>
-
-    <!-- <script src="main.js"></script> -->
+  </header>
+  <div>
+    <h2 class="text-center aliceblue" style="margin:0;" id="food-gal">history</h2>
+  </div>
+  <div class="row main-align">
+    <div class="col-3 mb-25">
+      <div class="col-11 mb-25" style="padding-right: 19px;">
+        <div class="card card-gray a-margin">
+          <div class="card-header text-center">
+            Feb 12
+          </div>
+        </div>
+      </div>
+      <div class="flex mb-5">
+        <div class="col-5 mr-25">
+          <div class="card card-gray a-margin">
+            <div class="card-header text-center">
+              Qty bought
+            </div>
+            <div class="card-body text-center">
+              <h2 class="">2</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card card-gray a-margin">
+            <div class="card-header text-center">
+              Amt spent
+            </div>
+            <div class="card-body text-center">
+              <h2 class="">$94</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 mb-25" style="padding-right: 19px;">
+        <div class="card card-gray a-margin">
+          <div class="card-header text-center">
+            <div class="">
+              <div class="col-12 mb-25">
+                <input type="date" class="form-control" value="2019-02-28" min="2019-02-01" max="2019-02-31">
+              </div>
+              <div class="row">
+                <div class="col-12 align-self">
+                  <button class="btn btn-success ">Get menu</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 flex">
+      <div class="col-12">
+        <div class="row justify-content-sa m-0">
+          <div class="col-12 ">
+            <div class="card card-gray" style="max-width:100%;">
+              <div class="card-header text-center ">Order History Details</div>
+              <div class="card-body text-center scroll-bar">
+        
+                <table class="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">PreparedBy</th>
+                      <th scope="col">Meal</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Date Ordered</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>chef Mark spoon</td>
+                      <td>bread and akara</td>
+                      <td>Break fast</td>
+                      <td>$15</td>
+                      <td>2019-02-01</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>chef larry gray</td>
+                      <td>egwusi and garri</td>
+                      <td>Dinner</td>
+                      <td>$20</td>
+                      <td>2019-01-31</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
