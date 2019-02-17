@@ -1,3 +1,4 @@
 #!/bin/sh
 
-cd back
+cd back/
+sbt ++$TRAVIS_SCALA_VERSION package
