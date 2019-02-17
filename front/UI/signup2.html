@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Book-a-meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+</head>
+
+<body>
+  <header class="header-index">
+    <nav class="nav-head">
+      <div class="col-1"></div>
+      <div class="col-9 ">
+        
+      </div>
+      <div class="col-2">
+        <ul class="flex">
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="#"></a>
+          </li>
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="./signIn2.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <h2 class="brand-name">Book-Eat</h2>
+    </div>
+  </header>
+  <div>
+    <h2 class="text-center aliceblue" style="margin:0;" id="food-gal">Register</h2>
+  </div>
+  <div class="row justify-content-ctr mt-25">
+    <div class="trans-white card ">
+      <form class="p-25" style="width: 40em">
+        <!-- <h2 class="text-center bl-text-shadow tx-white">Register</h2> -->
+        <div class="row fix-width">
+          <div class="col-6 mlr">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" required id="fullname" placeholder="full name">
+          </div>
+          <div class="col-6 mlr">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" required aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="">We'll never share your email with anyone else.</small>
+          </div>
+        </div>
+  
+        <div class="row ">
+          <h4 class="">Type</h4>
+          <div class="" style="align-self:center;">
+            <div class="">
+              <input class="" type="radio" name="gridRadios" required id="gridRadios1" value="option1">
+              <label class="" for="gridRadios1">
+                Caterer
+              </label>
+            </div>
+            <div class="">
+              <input class="" type="radio" name="gridRadios" required id="gridRadios2" value="option2" checked>
+              <label class="" for="gridRadios2">
+                Customer
+              </label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mb-25 row fix-width">
+          <div class="col-6 mlr">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" required placeholder="Password">
+          </div>
+          <div class="col-6 mlr">
+            <label for="exampleInputPassword1">confirm password</label>
+            <input type="password" class="form-control" id="confirm" required placeholder="Confirm Password">
+          </div>
+        </div>
+        <button type="submit" class="btn mt-25">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

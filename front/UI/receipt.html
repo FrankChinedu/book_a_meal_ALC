@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Book-a-meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+</head>
+
+<body>
+  <header class="header-index">
+    <nav class="nav-head">
+      <div class="col-1"></div>
+      <div class="col-9 ">
+
+      </div>
+      <div class="col-2">
+        <ul class="flex">
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="./index2.html">frank</a>
+          </li>
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="./signIn2.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <h2 class="brand-name">Book-Eat</h2>
+    </div>
+  </header>
+  <div>
+    <h2 class="text-center aliceblue" style="margin:0;" id="food-gal">Receipt</h2>
+  </div>
+  <div class="row justify-content-ctr mt-0">
+    <div class="flex flex-dir-col confirm col-8 p-25 text-center">
+      <div class="col-12 receipt">
+        <h2>Receipt</h2>
+        <div class="col-12">
+          <div class="receipt-brand-logo">
+            <h2 class="receipt-brand-name">Book-Eat</h2>
+          </div>
+        </div>
+
+        <table class="table table-bordered scroll-li" id="table" style="margin-top: 60px;">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Qty</th>
+              <th scope="col">size</th>
+              <th scope="col">Price</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>bread and akara</td>
+              <td>1</td>
+              <td>small</td>
+              <td>$15</td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>egwusi and garri</td>
+              <td>2</td>
+              <td>small</td>
+              <td>$20</td>
+              <td>$40</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="7"></th>
+              <!-- <td colspan="6"></td> -->
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td colspan="2"></td>
+              <td colspan="2">Total</td>
+              <td>$55</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="flex justify-content-flex-end mt-5">
+        <a href="./orderPage.html" class="btn mr-25">back</a>
+        <a href="./checkoutPage.html" class="btn btn-success">Proceed to payment</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

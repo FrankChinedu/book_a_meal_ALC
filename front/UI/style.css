@@ -348,7 +348,8 @@ tbody th {
 }
 
 .card-gray{
-    background:#808080c9;
+    /* background:#808080c9; */
+    background:#262525;
     color: #fff;
 }
 
@@ -563,6 +564,10 @@ cursor: text;
 
   .fix-width{
       width: 75%
+  }
+
+  .none{
+      display: none
   }
 
   .row{

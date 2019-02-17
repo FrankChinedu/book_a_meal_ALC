@@ -183,7 +183,28 @@ body {
     max-height:1000px;
     overflow-y: scroll;
 }
+.payCard{
+  width: 100px;
+}
 
+.payCard-body{
+  padding: 12px;
+  background: aliceblue;
+}
+
+.payCard-down {
+  background: aliceblue;
+}
+
+.confirm{
+  background: #262525;
+   box-shadow: 0px 0px 1px white; 
+}
+
+
+.flex-dir-col{
+  flex-direction: column
+}
 
 .active-li{
   background: gray;
@@ -197,6 +218,38 @@ body {
 .height-fit-content {
   height: fit-content;
 }
+
+.receipt{
+  background: #FFF;
+  border-radius: 3px;
+}
+
+.receipt-brand-name {
+  font-size: 20px;
+  line-height: 67px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  text-shadow: #363535 3px 3px 5px;
+}
+ 
+.receipt-brand-logo {
+    float: left;
+    position: absolute;
+    margin: 15px 0;
+    outline: 1px dashed #98abb9;
+    outline-offset: -5px;
+    z-index: 1;
+    background-color: #2c2b2b;
+    height: 63px;
+    width: 138px;
+    margin: -48px 50px;
+    -webkit-box-shadow: 2px 2px 2px #000;
+    -moz-box-shadow: 2px 2px 2px #000;
+    box-shadow: 2px 2px 2px #000;
+}
+
 
 .box-con > div {
   padding: 0 7px;
