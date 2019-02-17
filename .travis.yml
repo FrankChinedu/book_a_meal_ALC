@@ -2,4 +2,7 @@ language: node_js
 node_js:
 - "stable"
 
-before_install: ./build.sh
+before_install: 
+- sudo apt-get update
+
+script: ./build.sh
