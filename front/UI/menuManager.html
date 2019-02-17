@@ -2,200 +2,178 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Book-a-meal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Book-a-meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
 </head>
 
-<body class="bg-img">
-    <div class="conatainer ">
-        <nav class="navbar hi-z-index sticky white align-item-center justify-content-sb">
-            <span class="ml-25">
-                <h3 class="brand-style cursor">Book-Eat</h3>
-            </span>
-            <div class="mr-25">
-                <ul class="p-0 ">
-                    <li class="nav-item nav-link">Logout</li>
-                </ul>
-            </div>
-        </nav>
-        <div class="row justify-content-ctr mt-25">
-            <div class="col-3 mb-5">
-                <div class="card card-gray a-margin col-md-full card-default" >
-                    <div class="card-header text-center">
-                        Fun fact 
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque corrupti odio nostru
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 ml-5 mr-5 mb-5  col-md-full">
-                <div class=" card card-gray"  style="max-width:100%">
-                    <div class="card-header text-center">
-                        Add Menu for this day
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-6 ml-5 mr-5">
-                                    <p>Meal Type</p>
-                                    <select class="custom-select ">
-                                        <option value="1" selected>BreakFast</option>
-                                        <option value="2">Launch</option>
-                                        <option value="3">Dinner</option>
-                                    </select>
-                                </div>
-                                <div class="col-6 ml-5 mr-5">
-                                    <p>Available Meal</p>
-                                    <select class="custom-select">
-                                        <option value="1" selected>beans and rice</option>
-                                        <option value="2">akara and bread</option>
-                                        <option value="3">egwusi and garri</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <p>choose date for meal</p>
-                                    <input type="date" class="form-control" value="2019-02-28" min="2019-02-01" max="2019-02-31">
-                                </div>
-                                <div class="col-4 ">
-                                    <p class="date-style">Feb, 28</p>
-                                </div>
-                                <div class="col-4 align-self">
-                                    <button class="btn btn-success ">Add Menu </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 col-md-full mb-5 card-default">
-                <div class="card card-gray a-margin col-md-full" >
-                    <div class="card-header ">
-                        Chef Frank
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consec
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-sa m-0 mt-25">
-            <div class="col-4 mb-5">
-                <div class="card card-gray" style="max-width:100%;">
-                    <div class="card-header ">Break fast</div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col" colspan="2">meal</th>
-        
-                                    <th scope="col">price</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td colspan="2">beans and rice</td>
-                                    <td>$15</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td colspan="2">akara and bread</td>
-                                    <td>$30</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-        
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 mr-5 ml-5 mb-5">
-                <div class="card  card-gray" style="max-width: 100%;">
-                    <div class="card-header">Launch</div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col" colspan="2">meal</th>
-                                    <th scope="col">price</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td colspan="2">beans and rice</td>
-                                    <td>$15</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-        
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">egwusi and garri</td>
-                                    <td>$20</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-        
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">egwusi and garri</td>
-                                    <td>$20</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-        
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 mb-5">
-                <div class="card card-gray" style="max-width: 100%;">
-                    <div class="card-header">
-                        <span>Dinner</span>
-                    </div>
-                    <div class="card-body text-center scroll-bar">
-                        <table class="table table-bordered ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col" colspan="2">meal</th>
-                                    <th scope="col">price</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td colspan="2">akara and bread</td>
-                                    <td>$30</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">egwusi and garri</td>
-                                    <td>$20</td>
-                                    <th scope="col"><button class="btn btn-danger btn-sm">delete</button></th>
-                                </tr>
-                            </tbody>
-                        </table>
-        
-                    </div>
-                </div>
-            </div>
-        </div>
+<body>
+  <header class="header-index">
+    <nav class="nav-head">
+      <div class="col-1"></div>
+      <div class="col-9 ">
+        <ul class="flex none justify-content-sa border-right">
+          <li class="bottom-dash active li-sty-none">
+            <a class="nav-link-index tx-white" href="#">home</a>
+          </li>
+          <li class="bottom-dash li-sty-none">
+            <a class="nav-link-index tx-white" href="#">menu</a>
+          </li>
+          <li class="bottom-dash li-sty-none">
+            <a class="nav-link-index tx-white" href="./historyManager2.html">history</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="flex">
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="#">Frank</a>
+          </li>
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="./signIn.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <h2 class="brand-name">Book-Eat</h2>
     </div>
-
-    <!-- <script src="main.js"></script> -->
+  </header>
+  <div>
+      <h2 class="text-center aliceblue" style="margin:0;" id="food-gal">Add Menu</h2>
+  </div>
+  <div class="row">
+    <div class="col-4 mb-25" >
+      <div class=" card card-gray" style="max-width:100%">
+        <div class="card-header text-center">
+          Add Menu for this day
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-6 ml-5 mr-5">
+                <p>Meal Type</p>
+                <select class="custom-select ">
+                  <option value="1" selected>BreakFast</option>
+                  <option value="2">Launch</option>
+                  <option value="3">Dinner</option>
+                </select>
+              </div>
+              <div class="col-6 ml-5 mr-5">
+                <p>Available Meal</p>
+                <select class="custom-select">
+                  <option value="1" selected>beans and rice</option>
+                  <option value="2">akara and bread</option>
+                  <option value="3">egwusi and garri</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p>choose date for meal</p>
+                <input type="date" class="form-control" value="2019-02-28" min="2019-02-01" max="2019-02-31">
+              </div>
+              <div class="col-4 ">
+                <p class="date-style">Feb, 28</p>
+              </div>
+              <div class="col-4 align-self">
+                <button class="btn btn-success ">Add Menu </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-8" >
+      <div class="">
+        <ul class="flex" style="margin:0;margin: 0;padding-left: 37px;">
+          <li class="li-sty-none sub-nav active-li">
+            <a href="#" class="tx-white">All</a>
+          </li>
+          <li class="li-sty-none sub-nav">
+            <a href="#" class="tx-white">BreakFast</a>
+          </li>
+          <li class="li-sty-none sub-nav">
+            <a href="#" class="tx-white">Lunch</a>
+          </li>
+          <li class="li-sty-none sub-nav">
+            <a href="#" class="tx-white">Dinner</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex wrap justify-content-ctr scroll-li">
+        <div class="box">
+          <div class="box-1 bx-img-1">
+          </div>
+          <div class="box-con">
+            <div>
+              <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb </h4>
+              <span class="flex">
+                <p>$50</p>
+                <a href="#" class="btn btn-sm btn-danger height-fit-content">remove</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-1 bx-img-2">
+          </div>
+          <div class="box-con">
+            <div>
+              <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb </h4>
+              <span class="flex">
+                <p>$50</p>
+                <a href="#" class="btn btn-sm btn-danger height-fit-content">remove</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-1 bx-img-3">
+          </div>
+          <div class="box-con">
+            <div>
+              <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb </h4>
+              <span class="flex">
+                <p>$50</p>
+                <a href="#" class="btn btn-sm btn-danger height-fit-content">remove</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-1 bx-img-4">
+          </div>
+          <div class="box-con">
+            <div>
+              <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb </h4>
+              <span class="flex">
+                <p>$50</p>
+                <a href="#" class="btn btn-sm btn-danger height-fit-content">remove</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-1 bx-img-5">
+          </div>
+          <div class="box-con">
+            <div>
+              <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb </h4>
+              <span class="flex">
+                <p>$50</p>
+                <a href="#" class="btn btn-sm btn-danger height-fit-content">remove</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

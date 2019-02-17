@@ -1,102 +1,175 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Book-a-meal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Book-a-meal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
-</head>
-
-<body class="home-bg-color">
-  <header class="header">
-    <nav class="row row-m justify-content-sb">
-      <div class="ml-25">
-        <h2 class="brand-name"><span class="book">B</span>ook-<span class="eat">E</span>at</h2>
+  <body>
+    <header class="header-index">
+      <nav class="nav-head">
+        <div class="col-1"></div>
+        <div class="col-9 ">
+          <ul class="flex none justify-content-sa border-right">
+            <li class="bottom-dash active li-sty-none">
+              <a class="nav-link-index tx-white" href="./index2.html">home</a>
+            </li>
+            <li class="bottom-dash li-sty-none">
+              <a class="nav-link-index tx-white" href="./menuManager2.html">menu</a>
+            </li>
+            <li class="bottom-dash li-sty-none">
+              <a class="nav-link-index tx-white" href="./historyManager2.html">history</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="flex">
+            <li class="li-sty-none">
+              <a class="nav-link-index tx-white sign-iu" href="#">SignIn</a>
+            </li>
+            <li class="li-sty-none">
+              <a class="nav-link-index tx-white sign-iu" href="#">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="brand-logo">
+        <h2 class="brand-name">Book-Eat</h2>
       </div>
-      <ul class="row  mr-25 main-nav" style="margin: auto 0;">
-        <li class="nav-item">
-          <a href="./UI/customerPage.html" class="nav-link shade">Customer</a>
-        </li>
-        <li class="nav-item">
-          <a href="./historyManager.html" class="nav-link shade">History</a>
-        </li>
-        <li class="nav-item">
-          <a href="./foodManager.html" class="nav-link shade">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a href="./signIn.html" class="nav-link shade">SignIn</a>
-        </li>
-        <li class="nav-item">
-          <a href="./signup.html" class="nav-link shade">Logout</a>
-        </li>
-      </ul>
-      <ul class="mobile-nav" style="margin: auto 0;">
-        <li class="nav-item">
-          <a href="./foodManager.html" class="nav-link shade">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a href="./signIn.html" class="nav-link shade">SignIn</a>
-        </li>
-        <li class="nav-item">
-          <a href="./signup.html" class="nav-link shade">Logout</a>
-        </li>
-      </ul>
-    </nav>
+    </header>
+    <div>
+        <main class="main" >
+            <div class="col-6 flex height-100 align-item-center justify-content-ctr">
+                <div class="in-left flex align-item-center justify-content-ctr">
+                    <div class=" flex align-item-center justify-content-ctr">
+                        <h1 class="quote">
+                            "Life's not perfect but your Meal can be."
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6"></div>
+        </main>
+        <h2 class="text-center aliceblue" id="food-gal" >Food for the day</h2>
+        <div class="flex wrap justify-content-ctr">
+          <div class="box">
+            <div class="box-1 bx-img-1">
+            </div>
+            <div class="box-con">
+              <div>
+                <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb  </h4>
+                <span class="flex">
+                  <p>$50</p>
+                  <a href="#" class="btn btn-sm height-fit-content">checkout</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-1 bx-img-2">
+            </div>
+            <div class="box-con">
+              <div>
+                <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb  </h4>
+                <span class="flex">
+                  <p>$50</p>
+                  <a href="#" class="btn btn-sm height-fit-content">checkout</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-1 bx-img-3">
+            </div>
+            <div class="box-con">
+              <div>
+                <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb  </h4>
+                <span class="flex">
+                  <p>$50</p>
+                  <a href="#" class="btn btn-sm height-fit-content">checkout</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-1 bx-img-4">
+            </div>
+            <div class="box-con">
+              <div>
+                <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb  </h4>
+                <span class="flex">
+                  <p>$50</p>
+                  <a href="#" class="btn btn-sm height-fit-content">checkout</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-1 bx-img-5">
+            </div>
+            <div class="box-con">
+              <div>
+                <h4 class="mb-0 truncate">Bread and rice dhbf dhfbdhfb fbdfbdhfb  </h4>
+                <span class="flex">
+                  <p>$50</p>
+                  <a href="#" class="btn btn-sm height-fit-content">checkout</a>
+                </span>
+              </div>
+            </div>
+          </div>
 
-    <div class="head-content text-center">
-      <h2 class="head-title  head-title-m">EXCEPTIONAL CUISINES MADE SPECIALLY FOR YOU</h2>
-      <p class="head-sub">Get the feel of the best cousines from the world best chefs</p>
+        </div>
+        <div class="text-center">
+          <a href="#gallery" class="cursor bl-text-shadow">
+            <h4 class="white f-menu" style="color: black;">
+              Food Menu
+            </h4>
+          </a>
+        </div>
 
-      <div>
-        <a href="#gallery">
-          <h4 class="white f-menu" style="color: black;">
-            Food Menu
-          </h4>
-        </a>
+        <div class="" style="overflow:hidden; margin-top: 25px;">
+          <div class="cheff"></div>
+          <div class="text-center chef-cover">
+            <h2 class="head-title">MasterChef</h2>
+            <p class="head-sub">Make Special requests from our Master Chefs</p>
+            <h4 class="white f-menu cursor">Make Order</h4>
+          </div>
+          <div class="col-6 flex height-100 align-item-center justify-content-ctr">
+            <div class="in-left flex align-item-center justify-content-ctr">
+              <div class=" flex align-item-center justify-content-ctr">
+                <h1 class="quote">
+                  "Life's easy! Just do it."
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer class="index-footer flex justify-content-ctr align-item-center">
+      <div class="col-10">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <ul class="flex justify-content-sa">
+            <li class="li-sty-none">
+              <a href="#" class="nav-link-index tx-white">contact us</a>
+            </li>
+            <li class="li-sty-none">
+              <a href="#" class="nav-link-index tx-white">About Us</a>
+            </li>
+            <li class="li-sty-none">
+              <a href="#" class="nav-link-index tx-white">Terms of us</a>
+            </li>
+            <li class="li-sty-none">
+              <a href="#" class="nav-link-index tx-white">contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2"></div>
       </div>
-    </div>
-  </header>
-
-  <h2 class="text-center" id="food-gal">Food Gallery</h2>
-
-  <div class="gallery justify-content-ctr" id="gallery">
-    <div class="gallery-item">
-      <img src="./img/food2.jpeg" style="width:100%">
-      <img src="./img/food1.jpeg" style="width:100%">
-    </div>
-    <div class="gallery-item">
-      <img src="./img/food3.jpeg" style="width:100%">
-      <img src="./img/food4.jpeg" style="width:100%; height: 65.9%;">
-    </div>
-    <div class="gallery-item">
-      <img src="./img/food5.jpeg" style="width:100%">
-      <img src="./img/food6.jpeg" style="width:100%; height: 65.9%;">
-    </div>
-  </div>
-
-  <div class="" style="overflow:hidden; margin-top: 25px;">
-    <div class="chef" style="float:left; border-radius: 82px 0 100px 0;"></div>
-    <div class="text-center" style="position: absolute; width: 100%;">
-      <h2 class="head-title">MasterChef</h2>
-      <p class="head-sub">Make Special requests from our Master Chefs</p>
-      <h4 class="white f-menu cursor">Make Order</h4>
-    </div>
-  </div>
-
-  <footer class="footer row justify-content-ctr">
-    <div class="text-center " style="margin: 25px auto">
-      <h3>Contact Us</h3>
-      <div class="row justify-content-sa">
-        <p class="col-4 mlr">twitter: <a style="display:block;" href="#">twitter@bookeat.com</a></p><br>
-        <p class="col-4 mlr">Contact information: <a href="#">info@bookeat.com</a></p>
-        <br>
-        <p class="col-4 mlr">facebook: <a style="display:block;" href="#">facebook@bookeat.com</a></p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>
