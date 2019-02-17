@@ -147,7 +147,7 @@ body {
   box-shadow: -2px 1px 1px whitesmoke;             
 }
 .box:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
   box-shadow: #363535 1px 1px 1px;
 }
 
