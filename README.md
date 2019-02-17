@@ -7,6 +7,7 @@
 * [UI Template and Theme](#ui-theme)
 * [Setup](#setup)
 * [Test](#test)
+* [Code coverage](#code-coverage)
 * [License](#license)
 
 
@@ -60,6 +61,9 @@ run by simply
 ```
 $ npm test
 ```
+
+### Code coverage
+[![Coverage Status](https://coveralls.io/repos/github/FrankChinedu/book_a_meal_ALC/badge.svg?branch=master)](https://coveralls.io/github/FrankChinedu/book_a_meal_ALC?branch=master)
 
 ### License 
 This project is licensed under the MIT License.
