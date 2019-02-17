@@ -10,9 +10,9 @@
 * [License](#license)
 
 
-# Book a meal
+# Book-Eat
 
-Book a meal App is one of a kind food software application that solves the problem
+Book-Eat is a food booking App. Is one of a kind food software application that solves the problem
 accessibility of good and well prepared hygienic meal.
 
 it as easy as logining into the application and selecting a meal prepared by the world 
