@@ -10,7 +10,7 @@
 * [License](#license)
 
 
-# Book a meal {#book-a-meal}
+# Book a meal
 
 Book a meal App is one of a kind food software application that solves the problem
 accessibility of good and well prepared hygienic meal.
@@ -18,14 +18,14 @@ accessibility of good and well prepared hygienic meal.
 it as easy as logining into the application and selecting a meal prepared by the world 
 best chefs in your area.
 
-### Technologies {#technologies}
+### Technologies 
 
 This is a simple food app created with love and -
  - Node 
  - React
  - Postgres.
 
-### Code style {#code-style}
+### Code style 
 Airbnb
 
 ### UI Template and Theme {#ui-theme}
@@ -40,7 +40,7 @@ image preview
 
 ---
 
-### Setup {#setup}
+### Setup 
 To run this project, install it locally using npm:
 
 ##### For server
@@ -53,7 +53,7 @@ $ npm start
 
 
 
-### Test {#test}
+### Test 
 Test framework used mocha and chai
 run by simply
 
@@ -61,7 +61,7 @@ run by simply
 $ npm test
 ```
 
-### License {#license}
+### License 
 This project is licensed under the MIT License.
 
 MIT © Obi chinedu Frank
