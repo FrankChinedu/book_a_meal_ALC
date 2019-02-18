@@ -305,6 +305,14 @@ body {
   padding: 0px 10px;
 }
 
+.modal-display{
+  position: relative; 
+  height:400px; 
+  background: #fbf6f670; 
+  z-index: 2;
+  display: none
+}
+
 .active {
   border-bottom-style: solid;
   border-bottom-color: coral;
