@@ -66,7 +66,8 @@ $ npm test
 [![Coverage Status](https://coveralls.io/repos/github/FrankChinedu/book_a_meal_ALC/badge.svg?branch=master)](https://coveralls.io/github/FrankChinedu/book_a_meal_ALC?branch=master)
 
 #### travis
-[![Build Status](https://travis-ci.com/FrankChinedu/book_a_meal_ALC.svg?branch=deploy)](https://travis-ci.com/FrankChinedu/book_a_meal_ALC)
+[![Build Status](https://travis-ci.com/FrankChinedu/book_a_meal_ALC.svg?branch=feature/code-coverage)](https://travis-ci.com/FrankChinedu/book_a_meal_ALC)
+
 
 ### License 
 This project is licensed under the MIT License.
