@@ -48,7 +48,7 @@ image preview
 
 
 ### Trello board 
-[trello board] (https://trello.com/b/M3NM9KbQ/book-a-meal-alc)
+[trello board](https://trello.com/b/M3NM9KbQ/book-a-meal-alc)
 
 ### Setup 
 To run this project, install it locally using npm:
