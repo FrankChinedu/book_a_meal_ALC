@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec babel-node index",
     "test": "mocha  --require @babel/register",
-    "cover": "istanbul cover _mocha",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/*.js -- --require @babel/register",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "obi chinedu frank <frankieetchy@gmail.com>",
@@ -22,7 +22,7 @@
     "@babel/core": "7.2.2",
     "@babel/node": "7.2.2",
     "@babel/preset-env": "7.3.1",
-    "babel-register": "6.26.0",
+    "@babel/register": "7.0.0",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
     "chai-http": "4.2.1",
@@ -30,7 +30,7 @@
     "eslint": "5.13.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.16.0",
-    "istanbul": "0.4.5",
+    "istanbul": "1.1.0-alpha.1",
     "mocha": "5.2.0",
     "mocha-lcov-reporter": "1.3.0",
     "nodemon": "1.18.10"
