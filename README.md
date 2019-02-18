@@ -31,7 +31,7 @@ This is a simple food app created with love and -
 ### Code style 
 Airbnb
 
-### UI Template and Theme {#ui-theme}
+### UI Template and Theme
 A dark theme was used in this project.
 this was done to make the images of the well prepared meal 
 to be the main focus.
