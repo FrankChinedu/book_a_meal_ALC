@@ -63,7 +63,7 @@ $ npm test
 ```
 
 ### Code coverage
-[![Coverage Status](https://coveralls.io/repos/github/FrankChinedu/book_a_meal_ALC/badge.svg)](https://coveralls.io/github/FrankChinedu/book_a_meal_ALC)
+[![Coverage Status](https://coveralls.io/repos/github/FrankChinedu/book_a_meal_ALC/badge.svg?branch=master)](https://coveralls.io/github/FrankChinedu/book_a_meal_ALC?branch=master)
 
 #### travis
 [![Build Status](https://travis-ci.com/FrankChinedu/book_a_meal_ALC.svg?branch=deploy)](https://travis-ci.com/FrankChinedu/book_a_meal_ALC)
