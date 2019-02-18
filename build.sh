@@ -2,4 +2,4 @@
 
 cd back/
 npm install
-npm test
+npm run coveralls
