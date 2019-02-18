@@ -44,11 +44,17 @@ image preview
 ---
 
 ### gh-pages 
-[index page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/index.html)
+- [index page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/index.html)
+- [order page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/orderPage.html)
+- [checkout page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/checkoutPage.html)
+- [receipt](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/receipt.html)
+- [confirmation page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/confirmation.html)
+- [food page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/foodPage.html)
 
 
 ### Trello board 
 [trello board](https://trello.com/b/M3NM9KbQ/book-a-meal-alc)
+
 
 ### Setup 
 To run this project, install it locally using npm:
