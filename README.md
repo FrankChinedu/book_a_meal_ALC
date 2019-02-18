@@ -31,7 +31,7 @@ This is a simple food app created with love and -
 ### Code style 
 Airbnb
 
-### UI Template and Theme
+### UI Template and Theme 
 A dark theme was used in this project.
 this was done to make the images of the well prepared meal 
 to be the main focus.
@@ -43,7 +43,7 @@ image preview
 
 ---
 
-### gh-pages
+### gh-pages 
 [index page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/index.html)
 
 
