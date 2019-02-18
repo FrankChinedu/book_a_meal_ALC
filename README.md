@@ -5,6 +5,8 @@
 * [Technologies](#technologies)
 * [Code style](#code-style)
 * [UI Template and Theme](#ui-theme)
+* [gh-pages](#gh-page)
+* [Trello board](#trello)
 * [Setup](#setup)
 * [Test](#test)
 * [Code coverage](#code-coverage)
@@ -40,6 +42,13 @@ image preview
 	![book a meal](./front/UI/img/book-a-meal.png)
 
 ---
+
+### gh-pages
+[index page](https://frankchinedu.github.io/book_a_meal_ALC/front/UI/index.html)
+
+
+### Trello board 
+[trello board] (https://trello.com/b/M3NM9KbQ/book-a-meal-alc)
 
 ### Setup 
 To run this project, install it locally using npm:
