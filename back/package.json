@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "meal booking and delivering app",
   "main": "index.js",
+  "repository":"https://github.com/FrankChinedu/book_a_meal_ALC",
   "scripts": {
     "start": "nodemon --exec babel-node index",
     "test": "mocha  --require @babel/register",
