@@ -15,11 +15,12 @@ module.exports = {
       },
       currency: {
         type: Sequelize.STRING,
+        defaultValue: 'NGN',
       },
       cookId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
           as: 'cookId',
         },
