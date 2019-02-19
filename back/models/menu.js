@@ -5,8 +5,12 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Menu.associate = (models) => {
     // associations can be defined here
-    Menu.hasMany(models.Meal);
-    Menu.belongsTo(models.User);
+    Menu.hasMany(models.Meal, {
+      foreignKey: 'mealId',
+    });
+    Menu.belongsTo(models.User, {
+      foreignKey: 'cookId',
+    });
   };
   return Menu;
 };

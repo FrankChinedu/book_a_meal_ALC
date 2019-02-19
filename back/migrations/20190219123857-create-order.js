@@ -16,6 +16,22 @@ module.exports = {
       customer_id: {
         type: Sequelize.INTEGER,
       },
+      mealId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Meal',
+          key: 'id',
+          as: 'mealId',
+        },
+      },
+      cookId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'User',
+          key: 'id',
+          as: 'cookId',
+        },
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
@@ -23,7 +39,7 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-      }
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

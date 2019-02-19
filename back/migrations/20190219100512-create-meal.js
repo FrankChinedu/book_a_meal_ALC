@@ -16,6 +16,14 @@ module.exports = {
       currency: {
         type: Sequelize.STRING,
       },
+      cookId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'User',
+          key: 'id',
+          as: 'cookId',
+        },
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
