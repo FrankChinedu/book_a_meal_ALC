@@ -3,6 +3,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import routes from './routes/api';
+import { sequelize } from './models';
+import RolesServices from './services/RolesServices';
 // import morgan from 'morgan';
 
 const app = express();
@@ -19,6 +21,14 @@ global.apiURL = apiURL;
 app.use(`${apiURL}/`, routes);
 
 if (!module.parent) {
+  // sequelize.sync({ force: true })
+  //   .then(() => {
+  //     RolesServices.initializeRoles();
+  //     app.listen(process.env.PORT, () => {
+  //       console.log('server start at port 5000');
+  //     });
+  //   });
+
   app.listen(process.env.PORT, () => {
     console.log('server start at port 5000');
   });

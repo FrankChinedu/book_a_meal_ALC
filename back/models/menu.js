@@ -1,7 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
   const Menu = sequelize.define('Menu', {
     dateForMeal: DataTypes.DATEONLY,
-    timeFrame: DataTypes.ENUM,
+    timeFrame: {
+      type: DataTypes.ENUM,
+      values: ['breakfast', 'lunch', 'dinner'],
+    },
   }, {});
   Menu.associate = (models) => {
     // associations can be defined here
