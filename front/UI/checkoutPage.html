@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Book-a-meal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+</head>
+
+<body>
+  <header class="header-index">
+    <nav class="nav-head">
+      <div class="col-1"></div>
+      <div class="col-9 ">
+
+      </div>
+      <div class="col-2">
+        <ul class="flex">
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="#">frank</a>
+          </li>
+          <li class="li-sty-none">
+            <a class="nav-link-index tx-white sign-iu" href="./signIn.html">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-logo">
+      <h2 class="brand-name" >Book-Eat</h2>
+    </div>
+  </header>
+  <div>
+    <h2 class="text-center aliceblue" style="margin:0;" id="food-gal">Checkout Page</h2>
+  </div>
+  <div class="row justify-content-ctr mt-25 ">
+    <!-- <div class="confirm"> -->
+    <div class="flex flex-dir-col confirm col-6 p-25">
+      <div class="col-12 flex ">
+        <div class="col-6 mr-5 text-center payCard-body">
+          <img src="./img/visa-and-mastercard-logo-26.png" alt="visa and master card" class="payCard">
+          <div class="">
+            <input class="" type="radio" name="gridRadios" required id="gridRadios2" checked value="option1">
+            <label class="" for="gridRadios2">
+              Pay $94 with credit card
+            </label>
+          </div>
+        </div>
+        <div class="col-6 text-center payCard-body">
+          <img src="./img/paypal.png" alt="" class="payCard">
+          <div class="">
+            <input class="" type="radio" name="gridRadios" required id="gridRadios1" value="option2">
+            <label class="" for="gridRadios1">
+              Pay $94 with Paypal
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row col-12 mt-25 payCard-down">
+        <div class="col-6 p-25">
+          <div class="col-12 mb-25">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" autocomplete="off" required id="fullname" placeholder="full name">
+          </div>
+          <div class="col-12 row">
+            <div class="col-6 mr-5">
+              <label for="fullname">expiry date</label>
+              <input type="date" class="form-control" autocomplete="off" required id="fullname" placeholder="MM / YY">
+            </div>
+            <div class="col-6">
+              <label for="fullname">cvv / cvc*</label>
+              <input type="number" maxlength="3" class="form-control" autocomplete="off" required id="fullname"
+                placeholder="***">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 p-25">
+          <label for="email">Card number</label>
+          <input type="number" class="form-control" id="email" autocomplete="off" required aria-describedby="emailHelp"
+            placeholder="Card number">
+        </div>
+      </div>
+      <div class=" flex justify-content-flex-end mt-25">
+        <a href="./confirmation.html" class="btn col-3 btn-success text-center">PAY</a>
+      </div>
+
+    </div>
+    <!-- </div> -->
+
+  </div>
+</body>
+
+</html>
