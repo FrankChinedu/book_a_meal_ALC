@@ -250,6 +250,10 @@ body {
     box-shadow: 2px 2px 2px #000;
 }
 
+.color-inht {
+  color: inherit;
+}
+
 
 .box-con > div {
   padding: 0 7px;
@@ -389,5 +393,17 @@ body {
     margin: 0;
     text-shadow: #363535 3px 3px 5px;
   }
-  
+
+  .cheff {
+    width: 100%;
+  }
+
+  .sm-mt {
+    margin-top: 25px;
+  }
+
+  .chef-cover {
+    width: 100%;
+  }
+
 }
