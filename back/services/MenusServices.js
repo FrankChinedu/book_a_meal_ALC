@@ -3,7 +3,8 @@ import Meals from './MealsServices';
 import { menus } from '../utils/DummyData';
 
 export default class MenusServices {
-  static fetchAllMenus(mealDate = MenusServices.getTodaysDate()) {
+  static fetchAllMenus(mealDate = '2019-02-14') {
+    // mealDate = MenusServices.getTodaysDate(); // should get todays date
     /* the manu fetched would depend on the time passed when we introduce the database */
     // This is the data we will have in our database
     const date = mealDate;
