@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "meal booking and delivering app",
   "main": "index.js",
-  "repository":"https://github.com/FrankChinedu/book_a_meal_ALC",
+  "repository": "https://github.com/FrankChinedu/book_a_meal_ALC",
   "scripts": {
     "start": "nodemon --exec babel-node index",
     "test": "mocha  --require @babel/register",
+    "serve": "node index",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/*.js -- --require @babel/register",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
