@@ -3,6 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import routes from './routes/api';
+// import 'regenerator-runtime/runtime';
 import { sequelize } from './models';
 import RolesServices from './services/RolesServices';
 // import morgan from 'morgan';
