@@ -29,7 +29,9 @@
       </div>
     </nav>
     <div class="brand-logo">
-      <h2 class="brand-name" >Book-Eat</h2>
+      <a href="./index.html" class="color-inht">
+        <h2 class="brand-name">Book-Eat</h2>
+      </a>
     </div>
   </header>
   <div>
@@ -37,7 +39,7 @@
   </div>
   <div class="row justify-content-ctr mt-25 ">
     <!-- <div class="confirm"> -->
-    <div class="flex flex-dir-col confirm col-6 p-25">
+    <div class="flex flex-dir-col confirm col-6 p-25" style="position:absolute;">
       <div class="col-12 flex ">
         <div class="col-6 mr-5 text-center payCard-body">
           <img src="./img/visa-and-mastercard-logo-26.png" alt="visa and master card" class="payCard">
@@ -83,13 +85,35 @@
         </div>
       </div>
       <div class=" flex justify-content-flex-end mt-25">
-        <a href="./confirmation.html" class="btn col-3 btn-success text-center">PAY</a>
+        <a href="#" class="btn col-3 btn-success text-center" id="modal-btn" >PAY</a>
       </div>
 
     </div>
+
+    <!-- modal display -->
+
+    
     <!-- </div> -->
 
   </div>
+
+  <div style="" class="modal-display" >
+    <div class="row justify-content-ctr mt-25 "  ">
+      <div class="overlay"></div>
+      <div class="flex flex-dir-col confirm col-6 p-25 text-center">
+        <h4 class="text-center aliceblue" style="margin:0;" id="food-gal">Transcation Successful</h4>
+        <p class="tx-white">Please check your email for the receipt of your meal purchased.</p>
+        <p class="tx-white">Thank you for choosing us.</p>
+        <div class="flex justify-content-sa">
+          <a href="#" class="close_modal btn btn-sm">close</a>
+            <a href="./foodPage.html" class="btn btn-success btn-sm">continue to homepage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

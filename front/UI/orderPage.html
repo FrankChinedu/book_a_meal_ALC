@@ -29,7 +29,9 @@
       </div>
     </nav>
     <div class="brand-logo">
-      <h2 class="brand-name">Book-Eat</h2>
+      <a href="./index.html" class="color-inht">
+        <h2 class="brand-name">Book-Eat</h2>
+      </a>
     </div>
   </header>
   <div>
@@ -37,88 +39,90 @@
   </div>
   <div class="row justify-content-ctr mt-0">
     <div class="flex flex-dir-col confirm col-8 p-25 text-center">
-      <div class="col-12 receipt">
-        <h2>Order</h2>
-        <div class="col-12">
-          <div class="receipt-brand-logo">
-            <h2 class="receipt-brand-name">Book-Eat</h2>
-          </div>
+      <div class="col-12 receipt p-25">
+        <div class="receipt-brand-logo">
+          <h2 class="receipt-brand-name">Book-Eat</h2>
+        </div>           
+        <h2 class="ma">Order</h2>
+
+        <div class="table-responsive">
+          <table class="table table-bordered scroll-li" id="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">size</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>bread and akara</td>
+                <td>
+                  <select class="col-12">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="col-12">
+                    <option value="1">small</option>
+                    <option value="2">medium</option>
+                    <option value="3">large</option>
+                  </select>
+                </td>
+                <td>$15</td>
+                <td>$15</td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-danger">remove</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>egwusi and garri</td>
+                <td>
+                  <select class="col-12">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="col-12">
+                    <option value="1">small</option>
+                    <option value="2">medium</option>
+                    <option value="3">large</option>
+                  </select>
+                </td>
+                <td>$20</td>
+                <td>$40</td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-danger">remove</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="7"></th>
+                <!-- <td colspan="6"></td> -->
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td colspan="2"></td>
+                <td colspan="2">Total</td>
+                <td >$55</td>
+                <td ></td>
+              </tr>
+            </tbody>
+          </table>
+          
         </div>
 
-        <table class="table table-bordered scroll-li" id="table" style="margin-top: 60px;">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Item</th>
-              <th scope="col">Qty</th>
-              <th scope="col">size</th>
-              <th scope="col">Price</th>
-              <th scope="col">Total</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>bread and akara</td>
-              <td>
-                <select class="col-12">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">4</option>
-                  <option value="3">5</option>
-                </select>
-              </td>
-              <td>
-                <select class="col-12">
-                  <option value="1">small</option>
-                  <option value="2">medium</option>
-                  <option value="3">large</option>
-                </select>
-              </td>
-              <td>$15</td>
-              <td>$15</td>
-              <td>
-                <a href="#" class="btn btn-sm btn-danger">remove</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>egwusi and garri</td>
-              <td>
-                <select class="col-12">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">4</option>
-                  <option value="3">5</option>
-                </select>
-              </td>
-              <td>
-                <select class="col-12">
-                  <option value="1">small</option>
-                  <option value="2">medium</option>
-                  <option value="3">large</option>
-                </select>
-              </td>
-              <td>$20</td>
-              <td>$40</td>
-              <td>
-                <a href="#" class="btn btn-sm btn-danger">remove</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row" colspan="7"></th>
-              <!-- <td colspan="6"></td> -->
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td colspan="2"></td>
-              <td colspan="2">Total</td>
-              <td >$55</td>
-              <td ></td>
-            </tr>
-          </tbody>
-        </table>
       </div>
       <div class="flex justify-content-flex-end mt-5">
         <a href="./receipt.html" class="btn btn-success">Process</a>

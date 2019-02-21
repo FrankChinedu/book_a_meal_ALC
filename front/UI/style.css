@@ -549,6 +549,10 @@ cursor: text;
     margin-bottom: 2.5%;
 }
 
+.ma {
+    margin: auto;
+}
+
 
 /* ********************* */
 /* media query */
