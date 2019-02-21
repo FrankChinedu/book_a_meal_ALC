@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-
 const apiURL = '/api/v1';
 global.apiURL = apiURL;
 
