@@ -7,9 +7,12 @@
   "scripts": {
     "start": "nodemon --exec babel-node index",
     "test": "mocha  --require @babel/register",
-    "serve": "node index",
+    "heroku-postbuild": "npm install",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/*.js -- --require @babel/register",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "engines": {
+    "node": "10.10.0"
   },
   "author": "obi chinedu frank <frankieetchy@gmail.com>",
   "license": "MIT",
