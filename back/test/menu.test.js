@@ -1,8 +1,11 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
+
 import server from '../index';
+import { sequelize } from '../models';
 
 const should = chai.should();
+process.env.NODE_ENV = 'test';
 
 chai.use(chaiHttp);
 

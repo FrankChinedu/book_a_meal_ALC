@@ -23,17 +23,17 @@ global.apiURL = apiURL;
 app.use(`${apiURL}/`, routes);
 
 if (!module.parent) {
-  // sequelize.sync({ force: true })
-  //   .then(() => {
-  //     RolesServices.initializeRoles();
-  //     app.listen(process.env.PORT, () => {
-  //       console.log('server start at port 5000');
-  //     });
-  //   });
+  sequelize.sync({ force: true })
+    .then(() => {
+      RolesServices.initializeRoles();
+      app.listen(process.env.PORT, () => {
+        console.log('server start at port 5000');
+      });
+    });
 
-  app.listen(process.env.PORT, () => {
-    console.log('server start at port 5000');
-  });
+  // app.listen(process.env.PORT, () => {
+  //   console.log('server start at port 5000');
+  // });
 }
 
 module.exports = app;

@@ -1,14 +1,24 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
+
 import server from '../index';
+import { sequelize, Meal } from '../models';
 
 const should = chai.should();
+process.env.NODE_ENV = 'test';
 
 chai.use(chaiHttp);
 
 const { apiURL } = global;
 
-describe.skip('Meal', () => {
+describe('Meal', () => {
+  before((done) => {
+    sequelize.db.seed.all()
+      .then(async () => {
+        done();
+      });
+  });
+
   describe('/GET Meal', () => {
     it('it should  get all the meals', (done) => {
       chai.request(server)
