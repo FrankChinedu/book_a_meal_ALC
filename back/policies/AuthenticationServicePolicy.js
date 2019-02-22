@@ -3,9 +3,9 @@ const Joi = require('joi');
 export default class AuthenticationServicePolicy {
   static validate(req, res, next) {
     const schema = {
-      fullName: Joi.string(),
+      fullName: Joi.string().required(),
       userRole: Joi.string(),
-      email: Joi.string().email(),
+      email: Joi.string().email().required(),
       password: Joi.string().regex(
         new RegExp('^[a-zA-Z0-9]{8,32}$'),
       ),

@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 const { apiURL } = global;
 
-describe('MENU', () => {
+describe.skip('MENU', () => {
   describe('/GET menu for the day', () => {
     it('it should  get all the menu', (done) => {
       chai

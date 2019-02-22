@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 const { apiURL } = global;
 
-describe('Meal', () => {
+describe.skip('Meal', () => {
   describe('/GET Meal', () => {
     it('it should  get all the meals', (done) => {
       chai.request(server)

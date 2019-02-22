@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 const { apiURL } = global;
 
-describe('Test ORDER', () => {
+describe.skip('Test ORDER', () => {
   describe('/GET order', () => {
     it('it should  get all the orders', (done) => {
       chai

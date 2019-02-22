@@ -6,13 +6,14 @@
   "repository": "https://github.com/FrankChinedu/book_a_meal_ALC",
   "scripts": {
     "start": "nodemon --exec babel-node index",
-    "test": "mocha  --require @babel/register",
+    "test": "mocha  --require @babel/register -w --recursive",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/*.js -- --require @babel/register",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "obi chinedu frank <frankieetchy@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-runtime": "6.26.0",
     "bcrypt": "3.0.4",
     "body-parser": "1.18.3",
     "cors": "2.8.5",
@@ -23,6 +24,8 @@
     "morgan": "1.9.1",
     "pg": "7.8.0",
     "pg-hstore": "2.3.2",
+    "regenerator-runtime": "0.13.1",
+    "@babel/polyfill": "7.2.5",
     "sequelize": "4.42.0"
   },
   "devDependencies": {
@@ -30,6 +33,7 @@
     "@babel/node": "7.2.2",
     "@babel/preset-env": "7.3.1",
     "@babel/register": "7.0.0",
+    "babel-plugin-transform-runtime": "6.23.0",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
     "chai-http": "4.2.1",
