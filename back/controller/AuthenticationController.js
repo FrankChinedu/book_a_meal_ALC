@@ -16,7 +16,11 @@ export default class AuthenticationController {
     const data = req.body;
 
     const response = await AuthenticationService.login(data);
+    if (response.success) {
+      res.status(200).send(response);
+    } else {
+      res.status(400).send(response);
+    }
     // console.log('res control - - ', response);
-    res.status(200).send(response);
   }
 }

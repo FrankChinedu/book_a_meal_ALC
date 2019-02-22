@@ -5,7 +5,7 @@ export default class AuthenticationService {
   static async register(data) {
     try {
       const { userRole } = data;
-      console.log('data', data);
+      // console.log('data', data);
       const user = await User.create(data);
       const role = await Role.findAll({
         where: {
@@ -43,26 +43,30 @@ export default class AuthenticationService {
 
       if (!user) {
         return {
+          success: false,
           error: 'The login information was incorrect',
         };
       }
 
       const isPasswordValid = await Helper.comparePassword(password, user.password);
-      console.log('isPasswordValid --', isPasswordValid);
+      // console.log('isPasswordValid --', isPasswordValid);
       if (!isPasswordValid) {
         return {
-          error: 'The password information was incorrect',
+          success: false,
+          error: 'The login information was incorrect',
         };
       }
 
       const userJson = user.toJSON();
       return {
+        success: true,
         user: userJson,
         token: Helper.jwtSignUser(userJson),
       };
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       return {
+        success: false,
         error: 'An throw error has occured trying to log in',
       };
     }
