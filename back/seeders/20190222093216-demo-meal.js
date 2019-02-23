@@ -3,17 +3,17 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
 
-    // const users = await queryInterface.sequelize.query(
-    //   'SELECT id from User where email="demo@demo.com";',
-    // );
+    const users = await queryInterface.sequelize.query(
+      'SELECT "id", "fullName" FROM "Users" AS "User";',
+    );
 
-    // const userId = users[0].id;
+    const cookId = users[0].id;
 
     return queryInterface.bulkInsert('Meals', [{
       name: 'beans and goat meat',
       price: 34,
       currency: 'NGN',
-      cookId: 8,
+      cookId,
       createdAt: new Date(),
       updatedAt: new Date(),
     },
@@ -21,7 +21,7 @@ module.exports = {
       name: 'garri and egusi soup',
       price: 50,
       currency: 'NGN',
-      cookId: 8,
+      cookId,
       createdAt: new Date(),
       updatedAt: new Date(),
     },

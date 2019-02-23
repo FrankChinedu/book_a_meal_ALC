@@ -1,25 +1,26 @@
-// import Meals from '../models/Meal';
-import { meals } from '../utils/DummyData';
+import { Meal } from '../models';
+// import { meals } from '../utils/DummyData';
 
 export default class MealsService {
-  static fetchAllMeals() {
+  static async fetchAllMeals(id) {
     // let that = this;
     // This is the data we will have in our database
-    const mappedMeals = meals.map((data) => {
-      const meal = new Meals();
-      meal.id = data.id;
-      meal.name = data.name;
-      meal.price = data.price;
-      meal.cookId = data.cookId;
-      meal.currency = data.currency;
-      return meal;
+    const fetchedMeals = [];
+    const meals = await Meal.findAll({
+      where: {
+        cookId: id,
+      },
+    });
+    meals.forEach((meal) => {
+      fetchedMeals.push(meal.dataValues);
     });
 
-    return mappedMeals;
+    return fetchedMeals;
   }
 
-  static getAllMeal() {
-    return MealsService.fetchAllMeals();
+  static async getAllMeal(id) {
+    const result = await MealsService.fetchAllMeals(id);
+    return result;
   }
 
   static get(id) {
@@ -27,30 +28,36 @@ export default class MealsService {
     return MealsService.fetchAllMeals()[id - 1];
   }
 
-  static update(params) {
+  static async update(params) {
     const { id } = params;
-    let meal = MealsService.get(id);
-    if (meal) {
-      meal = { ...meal, ...params };
+
+    try {
+      let meal = await Meal.findById(id);
+      meal = await meal.update(params);
+      meal = meal.toJSON();
       return meal;
+    } catch (err) {
+      return { message: 'error occurred' };
     }
-    return meal;
   }
 
-  static add(params) {
-    let meal = new Meals();
-    meal.id = meals.length + 1;
-    meal.cookId = 1;
-    meal = { ...meal, ...params };
-    meals.push(meal);
-    return meal;
+  static async add(data) {
+    const meal = await Meal.create(data);
+    return meal.toJSON();
   }
 
-  static delete(id) {
-    const passedId = parseInt(id, 10);
-    return meals.filter((data) => {
-      const dataId = parseInt(data.id, 10);
-      return dataId !== passedId;
-    });
+  static async delete(id) {
+    try {
+      let meal = await Meal.findById(id);
+
+      if (meal) {
+        meal = await meal.destroy();
+        meal = meal.toJSON();
+        return meal;
+      }
+      return {};
+    } catch (err) {
+      return { message: 'error occurred' };
+    }
   }
 }
