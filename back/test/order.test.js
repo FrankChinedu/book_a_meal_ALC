@@ -75,9 +75,9 @@ describe('Test ORDER', () => {
   describe('/POST order', () => {
     it('should add a new order ', (done) => {
       const data = {
-        userId: '1',
+        quantity: '1',
         menuId: '3',
-        cookId: '1',
+        size: 'large',
       };
       chai
         .request(server)

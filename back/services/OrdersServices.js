@@ -8,9 +8,9 @@ export default class OrdersServices {
     const mappedOrders = orders.map((data) => {
       const order = new Order();
       order.id = data.id;
-      order.userId = data.userId;
+      order.userId = 1;
       order.menuId = data.menuId;
-      order.cookId = data.cookId;
+      order.cookId = 1;
       order.quantity = data.quantity;
       order.size = data.size;
       order.meal = { ...this.getMeal(data.menuId) };
@@ -34,6 +34,7 @@ export default class OrdersServices {
     let order = OrdersServices.get(id);
     if (order) {
       order = { ...order, ...params };
+      orders[id - 1] = order;
       return order;
     }
     return order;
@@ -45,11 +46,13 @@ export default class OrdersServices {
     return meal;
   }
 
-  static add({ userId, menuId, cookId }) {
+  static add({ quantity, menuId, size }) {
     const order = new Order();
     order.id = orders.length + 1;
-    order.cookId = cookId;
-    order.userId = userId;
+    order.cookId = 1;
+    order.userId = 1;
+    order.quantity = quantity;
+    order.size = size;
     order.menuId = menuId;
     order.meal = { ...this.getMeal(menuId) };
 
@@ -60,9 +63,8 @@ export default class OrdersServices {
 
   static delete(id) {
     const passedId = parseInt(id, 10);
-    return orders.filter((data) => {
-      const dataId = parseInt(data.id, 10);
-      return dataId !== passedId;
-    });
+    const orderId = orders.findIndex(order => order.id === passedId);
+    orders.splice(orderId, 1);
+    return orders;
   }
 }

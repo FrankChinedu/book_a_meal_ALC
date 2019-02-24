@@ -20,7 +20,8 @@ export default class MenusServices {
       return menu;
     });
 
-    return mappedMenu.filter(meal => meal.dateForMeal === date);
+    // return mappedMenu.filter(meal => meal.dateForMeal === date);
+    return mappedMenu;
   }
 
   static getMeal(mealId) {
@@ -58,9 +59,8 @@ export default class MenusServices {
 
   static delete(id) {
     const passedId = parseInt(id, 10);
-    return menus.filter((data) => {
-      const dataId = parseInt(data.id, 10);
-      return dataId !== passedId;
-    });
+    const menuId = menus.findIndex(menu => menu.id === passedId);
+    menus.splice(menuId, 1);
+    return menus;
   }
 }

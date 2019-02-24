@@ -32,6 +32,7 @@ export default class MealsService {
     let meal = MealsService.get(id);
     if (meal) {
       meal = { ...meal, ...params };
+      meals[id - 1] = meal;
       return meal;
     }
     return meal;
@@ -48,9 +49,9 @@ export default class MealsService {
 
   static delete(id) {
     const passedId = parseInt(id, 10);
-    return meals.filter((data) => {
-      const dataId = parseInt(data.id, 10);
-      return dataId !== passedId;
-    });
+
+    const mealId = meals.findIndex(meal => meal.id === passedId);
+    meals.splice(mealId, 1);
+    return meals;
   }
 }
