@@ -64,7 +64,10 @@ export default class OrdersServices {
   static delete(id) {
     const passedId = parseInt(id, 10);
     const orderId = orders.findIndex(order => order.id === passedId);
-    orders.splice(orderId, 1);
-    return orders;
+    if (orderId !== -1) {
+      orders.splice(orderId, 1);
+      return orders;
+    }
+    return { message: 'not found' };
   }
 }

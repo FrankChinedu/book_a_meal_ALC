@@ -60,7 +60,10 @@ export default class MenusServices {
   static delete(id) {
     const passedId = parseInt(id, 10);
     const menuId = menus.findIndex(menu => menu.id === passedId);
-    menus.splice(menuId, 1);
-    return menus;
+    if (menuId !== -1) {
+      menus.splice(menuId, 1);
+      return menus;
+    }
+    return { message: 'not found' };
   }
 }
