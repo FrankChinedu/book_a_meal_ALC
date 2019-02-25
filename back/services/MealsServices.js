@@ -50,7 +50,7 @@ export default class MealsService {
   static delete(id) {
     const passedId = parseInt(id, 10);
 
-    const mealId = meals.findIndex(meal => meal.id === passedId);
+    const mealId = meals.find(meal => meal.id === passedId);
     meals.splice(mealId, 1);
     return meals;
   }
