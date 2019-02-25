@@ -21,9 +21,9 @@ router.delete('/menu/:id', MenuController.delete);
 
 /* order route */
 
-router.get('/order', OrderController.getAllOrder);
-router.put('/order/:id', OrderController.update);
-router.post('/order', OrderController.add);
-router.delete('/order/:id', OrderController.delete);
+router.get('/orders', OrderController.getAllOrder);
+router.put('/orders/:id', OrderController.update);
+router.post('/orders', OrderController.add);
+router.delete('/orders/:id', OrderController.delete);
 
 module.exports = router;

@@ -13,7 +13,7 @@ describe('Test ORDER', () => {
     it('it should  get all the orders', (done) => {
       chai
         .request(server)
-        .get(`${apiURL}/order`)
+        .get(`${apiURL}/orders`)
         .end((err, res) => {
           res.should.have.status(200);
           should.exist(res.body);
@@ -32,7 +32,7 @@ describe('Test ORDER', () => {
       };
       chai
         .request(server)
-        .put(`${apiURL}/order/${orderId}`)
+        .put(`${apiURL}/orders/${orderId}`)
         .send(orderInfo)
         .end((err, res) => {
           res.should.have.status(200);
@@ -51,7 +51,7 @@ describe('Test ORDER', () => {
       const orderId = 'fakeId';
       chai
         .request(server)
-        .put(`${apiURL}/order/${orderId}`)
+        .put(`${apiURL}/orders/${orderId}`)
         .end((err, res) => {
           res.should.have.status(404);
           done();
@@ -64,7 +64,7 @@ describe('Test ORDER', () => {
       const orderId = 1;
       chai
         .request(server)
-        .delete(`${apiURL}/order/${orderId}`)
+        .delete(`${apiURL}/orders/${orderId}`)
         .end((err, res) => {
           res.should.have.status(200);
           done();
@@ -81,7 +81,7 @@ describe('Test ORDER', () => {
       };
       chai
         .request(server)
-        .post(`${apiURL}/order`)
+        .post(`${apiURL}/orders`)
         .send(data)
         .end((err, res) => {
           res.should.have.status(200);
